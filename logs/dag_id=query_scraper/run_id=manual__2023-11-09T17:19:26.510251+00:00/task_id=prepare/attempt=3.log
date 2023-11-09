@@ -1,0 +1,57 @@
+[2023-11-09T17:30:10.716+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.prepare manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:30:10.720+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.prepare manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:30:10.720+0000] {taskinstance.py:1361} INFO - Starting attempt 3 of 3
+[2023-11-09T17:30:10.728+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): prepare> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T17:30:10.732+0000] {standard_task_runner.py:57} INFO - Started process 66 to run task
+[2023-11-09T17:30:10.734+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'prepare', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmpzr7lh_mn']
+[2023-11-09T17:30:10.735+0000] {standard_task_runner.py:85} INFO - Job 8: Subtask prepare
+[2023-11-09T17:30:10.763+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.prepare manual__2023-11-09T17:19:26.510251+00:00 [running]> on host aea5ff0044dc
+[2023-11-09T17:30:10.802+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='prepare' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T17:30:10.803+0000] {logger.py:18} INFO - Creating path
+[2023-11-09T17:30:10.803+0000] {logging_mixin.py:151} INFO - Create ./data_output/STZ//2023/novembro/2023_11_09 folder
+[2023-11-09T17:30:10.803+0000] {logger.py:18} INFO - Reading csv file
+[2023-11-09T17:30:10.810+0000] {logger.py:18} INFO - Queries to be scraped:                                          QUERY
+0            BOLSA FEMININA TIRACOLO EM NAPA  
+1         SANDALIA MASCULINA ADULTO EM COURO  
+2   SANDÁLIA FEMININA ADULTO EM NAPA  RASTEIRA
+3       SANDÁLIA MASCULINA ADULTO EM CAMURÇA  
+4          SANDÁLIA MASCULINA ADULTO EM NAPA  
+5        SAPATENIS MASCULINO ADULTO EM COURO  
+6         SAPATENIS MASCULINO ADULTO EM LONA  
+7         SAPATENIS MASCULINO ADULTO EM NAPA  
+8       SAPATENIS MASCULINO ADULTO EM NOBUCK  
+9      SAPATO FEMININO ADULTO EM NAPA  SCARPIN
+10              TÊNIS MASCULINO ADULTO ADIDAS 
+11               TÊNIS MASCULINO ADULTO ASICS 
+12              TÊNIS MASCULINO ADULTO MIZUNO 
+13                TÊNIS MASCULINO ADULTO NIKE 
+14           TÊNIS MASCULINO ADULTO OLIMPIKUS 
+[2023-11-09T17:30:10.818+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/task_definitions.py", line 84, in prepare
+    df.to_parquet(f"{output_path}/raw_queries.parquet")
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 2677, in to_parquet
+    return to_parquet(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/parquet.py", line 412, in to_parquet
+    impl = get_engine(engine)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/parquet.py", line 53, in get_engine
+    raise ImportError(
+ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+[2023-11-09T17:30:10.824+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=query_scraper, task_id=prepare, execution_date=20231109T171926, start_date=20231109T173010, end_date=20231109T173010
+[2023-11-09T17:30:10.830+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 8 for task prepare (Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.; 66)
+[2023-11-09T17:30:10.866+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-09T17:30:10.890+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

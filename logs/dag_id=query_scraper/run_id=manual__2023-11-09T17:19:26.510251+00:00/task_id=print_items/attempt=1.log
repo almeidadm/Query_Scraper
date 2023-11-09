@@ -1,0 +1,22 @@
+[2023-11-09T18:10:44.074+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:10:44.080+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:10:44.080+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-09T18:10:44.095+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): print_items> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T18:10:44.099+0000] {standard_task_runner.py:57} INFO - Started process 2810 to run task
+[2023-11-09T18:10:44.102+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'print_items', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmpu49ipfi3']
+[2023-11-09T18:10:44.103+0000] {standard_task_runner.py:85} INFO - Job 29: Subtask print_items
+[2023-11-09T18:10:44.133+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [running]> on host bc76e66ea169
+[2023-11-09T18:10:44.171+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='print_items' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T18:10:44.529+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/task_definitions.py", line 133, in print_items
+    url = ScrapeSpecifications._handle_url(item['url'])
+TypeError: ScrapeSpecifications._handle_url() missing 1 required positional argument: 'url'
+[2023-11-09T18:10:44.534+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=query_scraper, task_id=print_items, execution_date=20231109T171926, start_date=20231109T181044, end_date=20231109T181044
+[2023-11-09T18:10:44.551+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 29 for task print_items (ScrapeSpecifications._handle_url() missing 1 required positional argument: 'url'; 2810)
+[2023-11-09T18:10:44.594+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-09T18:10:44.625+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

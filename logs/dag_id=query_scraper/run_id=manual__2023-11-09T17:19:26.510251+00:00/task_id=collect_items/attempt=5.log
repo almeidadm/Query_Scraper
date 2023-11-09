@@ -1,0 +1,30 @@
+[2023-11-09T17:55:09.791+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:55:09.799+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:55:09.799+0000] {taskinstance.py:1361} INFO - Starting attempt 5 of 5
+[2023-11-09T17:55:09.806+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): collect_items> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T17:55:09.810+0000] {standard_task_runner.py:57} INFO - Started process 74 to run task
+[2023-11-09T17:55:09.813+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'collect_items', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmp0owofodp']
+[2023-11-09T17:55:09.816+0000] {standard_task_runner.py:85} INFO - Job 18: Subtask collect_items
+[2023-11-09T17:55:09.842+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [running]> on host bc76e66ea169
+[2023-11-09T17:55:09.888+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='collect_items' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T17:55:09.906+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/task_definitions.py", line 90, in collect
+    df = pd.read_parquet(f'{output_path}/raw_queries.parquet')
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/parquet.py", line 495, in read_parquet
+    return impl.read(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/parquet.py", line 232, in read
+    path_or_handle, handles, kwargs["filesystem"] = _get_path_or_handle(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/parquet.py", line 101, in _get_path_or_handle
+    handles = get_handle(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data_output/STZ//2023/novembro/2023_11_09/raw_queries.parquet'
+[2023-11-09T17:55:09.913+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=query_scraper, task_id=collect_items, execution_date=20231109T171926, start_date=20231109T175509, end_date=20231109T175509
+[2023-11-09T17:55:09.920+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 18 for task collect_items ([Errno 2] No such file or directory: './data_output/STZ//2023/novembro/2023_11_09/raw_queries.parquet'; 74)
+[2023-11-09T17:55:09.945+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-09T17:55:09.967+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

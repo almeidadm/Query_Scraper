@@ -1,0 +1,32 @@
+[2023-11-09T17:57:31.760+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.prepare manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:57:31.765+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.prepare manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:57:31.765+0000] {taskinstance.py:1361} INFO - Starting attempt 5 of 5
+[2023-11-09T17:57:31.772+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): prepare> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T17:57:31.775+0000] {standard_task_runner.py:57} INFO - Started process 113 to run task
+[2023-11-09T17:57:31.777+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'prepare', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmp2rebwcmz']
+[2023-11-09T17:57:31.779+0000] {standard_task_runner.py:85} INFO - Job 19: Subtask prepare
+[2023-11-09T17:57:31.804+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.prepare manual__2023-11-09T17:19:26.510251+00:00 [running]> on host bc76e66ea169
+[2023-11-09T17:57:31.844+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='prepare' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T17:57:31.844+0000] {logger.py:18} INFO - Creating path
+[2023-11-09T17:57:31.845+0000] {logging_mixin.py:151} INFO - Create data_output/STZ//2023/novembro/2023_11_09 folder
+[2023-11-09T17:57:31.845+0000] {logger.py:18} INFO - Reading csv file
+[2023-11-09T17:57:31.850+0000] {logger.py:18} INFO - Queries to be scraped:                                          QUERY
+0            BOLSA FEMININA TIRACOLO EM NAPA  
+1         SANDALIA MASCULINA ADULTO EM COURO  
+2   SANDÁLIA FEMININA ADULTO EM NAPA  RASTEIRA
+3       SANDÁLIA MASCULINA ADULTO EM CAMURÇA  
+4          SANDÁLIA MASCULINA ADULTO EM NAPA  
+5        SAPATENIS MASCULINO ADULTO EM COURO  
+6         SAPATENIS MASCULINO ADULTO EM LONA  
+7         SAPATENIS MASCULINO ADULTO EM NAPA  
+8       SAPATENIS MASCULINO ADULTO EM NOBUCK  
+9      SAPATO FEMININO ADULTO EM NAPA  SCARPIN
+10              TÊNIS MASCULINO ADULTO ADIDAS 
+11               TÊNIS MASCULINO ADULTO ASICS 
+12              TÊNIS MASCULINO ADULTO MIZUNO 
+13                TÊNIS MASCULINO ADULTO NIKE 
+14           TÊNIS MASCULINO ADULTO OLIMPIKUS 
+[2023-11-09T17:57:31.873+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-09T17:57:31.880+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=query_scraper, task_id=prepare, execution_date=20231109T171926, start_date=20231109T175731, end_date=20231109T175731
+[2023-11-09T17:57:31.909+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-09T17:57:31.931+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

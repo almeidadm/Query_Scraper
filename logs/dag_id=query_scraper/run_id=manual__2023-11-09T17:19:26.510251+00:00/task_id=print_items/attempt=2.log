@@ -1,0 +1,132 @@
+[2023-11-09T18:14:31.378+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:14:31.383+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:14:31.383+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-11-09T18:14:31.391+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): print_items> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T18:14:31.395+0000] {standard_task_runner.py:57} INFO - Started process 3008 to run task
+[2023-11-09T18:14:31.397+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'print_items', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmpwhwrxdkc']
+[2023-11-09T18:14:31.399+0000] {standard_task_runner.py:85} INFO - Job 30: Subtask print_items
+[2023-11-09T18:14:31.426+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [running]> on host bc76e66ea169
+[2023-11-09T18:14:31.468+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='print_items' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T18:14:31.838+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-vinho-5155195-p1151165
+[2023-11-09T18:14:34.780+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-vinho-5155195-p1151165
+[2023-11-09T18:14:36.082+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-stz-corrente-texturizada-bege-5182130-p2686465
+[2023-11-09T18:14:37.613+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-stz-corrente-texturizada-bege-5182130-p2686465
+[2023-11-09T18:14:38.675+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-azul-5176913-p2630920
+[2023-11-09T18:14:40.162+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-azul-5176913-p2630920
+[2023-11-09T18:14:41.232+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-tacha-texturizada-laranja-5163044-p1656990
+[2023-11-09T18:14:42.446+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-tacha-texturizada-laranja-5163044-p1656990
+[2023-11-09T18:14:43.564+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-coral-5176912-p2630919
+[2023-11-09T18:14:44.789+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-coral-5176912-p2630919
+[2023-11-09T18:14:45.874+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-ziper-amarelo-5161372-p1637831
+[2023-11-09T18:14:47.171+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-ziper-amarelo-5161372-p1637831
+[2023-11-09T18:14:48.204+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-verde-5175691-p2622332
+[2023-11-09T18:14:49.557+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-verde-5175691-p2622332
+[2023-11-09T18:14:50.652+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-texturizada-rosa-5149353-p163495
+[2023-11-09T18:14:51.988+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-texturizada-rosa-5149353-p163495
+[2023-11-09T18:14:53.179+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-pagani-texturizado-vermelho-5159747-p1616158
+[2023-11-09T18:14:54.624+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-pagani-texturizado-vermelho-5159747-p1616158
+[2023-11-09T18:14:55.679+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizado-verde-5172413-p2600916
+[2023-11-09T18:14:57.076+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizado-verde-5172413-p2600916
+[2023-11-09T18:14:58.295+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-off-white-5183139-p2700656
+[2023-11-09T18:14:59.669+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-off-white-5183139-p2700656
+[2023-11-09T18:15:00.786+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-azul-5185719-p2724468
+[2023-11-09T18:15:02.301+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-azul-5185719-p2724468
+[2023-11-09T18:15:03.348+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-logo-barbicacho-pink-5189463-p2757197
+[2023-11-09T18:15:04.726+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-logo-barbicacho-pink-5189463-p2757197
+[2023-11-09T18:15:06.927+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-meia-lua-laranja-5176911-p2630918
+[2023-11-09T18:15:08.294+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-meia-lua-laranja-5176911-p2630918
+[2023-11-09T18:15:09.385+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5149350-p163491
+[2023-11-09T18:15:10.808+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5149350-p163491
+[2023-11-09T18:15:11.969+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-azul-5157744-p1179332
+[2023-11-09T18:15:13.528+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-azul-5157744-p1179332
+[2023-11-09T18:15:14.619+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-caramelo-5149352-p163484
+[2023-11-09T18:15:16.112+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-caramelo-5149352-p163484
+[2023-11-09T18:15:17.206+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-micangas-verde-5176962-p2630928
+[2023-11-09T18:15:18.864+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-micangas-verde-5176962-p2630928
+[2023-11-09T18:15:19.981+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-preto-5163395-p1659093
+[2023-11-09T18:15:21.463+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-preto-5163395-p1659093
+[2023-11-09T18:15:22.591+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-envelope-detalhe-corrente-caramelo-5170098-p2417554
+[2023-11-09T18:15:24.217+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-envelope-detalhe-corrente-caramelo-5170098-p2417554
+[2023-11-09T18:15:25.508+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-texturizado-verde-5163551-p1659928
+[2023-11-09T18:15:27.094+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-texturizado-verde-5163551-p1659928
+[2023-11-09T18:15:28.150+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-drapeada-verde-5157875-p1179434
+[2023-11-09T18:15:30.579+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-drapeada-verde-5157875-p1179434
+[2023-11-09T18:15:32.026+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-geometrico-amarelo-5163560-p1659946
+[2023-11-09T18:15:33.459+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-geometrico-amarelo-5163560-p1659946
+[2023-11-09T18:15:34.625+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-nude-5171138-p2587636
+[2023-11-09T18:15:36.191+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-nude-5171138-p2587636
+[2023-11-09T18:15:37.505+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5175690-p2622331
+[2023-11-09T18:15:39.171+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5175690-p2622331
+[2023-11-09T18:15:40.572+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-lilas-5176908-p2630915
+[2023-11-09T18:15:42.229+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-lilas-5176908-p2630915
+[2023-11-09T18:15:43.290+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-verde-5179707-p2664371
+[2023-11-09T18:15:44.797+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-verde-5179707-p2664371
+[2023-11-09T18:15:45.852+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-gabriela-detalhe-em-recortes-verde-5157853-p1179388
+[2023-11-09T18:15:47.190+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-gabriela-detalhe-em-recortes-verde-5157853-p1179388
+[2023-11-09T18:15:48.296+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-amarelo-5161374-p1637833
+[2023-11-09T18:15:49.673+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-amarelo-5161374-p1637833
+[2023-11-09T18:15:50.906+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-gabriela-texturizada-azul-5157743-p1179328
+[2023-11-09T18:15:52.235+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-gabriela-texturizada-azul-5157743-p1179328
+[2023-11-09T18:15:53.425+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-pespontos-couro-marrom-5183473-p2702196
+[2023-11-09T18:15:54.801+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-pespontos-couro-marrom-5183473-p2702196
+[2023-11-09T18:15:55.778+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-perfuros-ilhos-couro-marrom-5179557-p2663294
+[2023-11-09T18:15:57.250+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-perfuros-ilhos-couro-marrom-5179557-p2663294
+[2023-11-09T18:15:58.372+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5169466-p1889884
+[2023-11-09T18:15:59.615+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5169466-p1889884
+[2023-11-09T18:16:00.832+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-anilina-perfuros-couro-marrom-5177388-p2636311
+[2023-11-09T18:16:02.318+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-anilina-perfuros-couro-marrom-5177388-p2636311
+[2023-11-09T18:16:03.578+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5126476-p69332
+[2023-11-09T18:16:05.059+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5126476-p69332
+[2023-11-09T18:16:06.205+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-hotfix-amarelo-5166770-p1689903
+[2023-11-09T18:16:07.671+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-hotfix-amarelo-5166770-p1689903
+[2023-11-09T18:16:08.820+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-pink-5180754-p2673094
+[2023-11-09T18:16:10.403+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-pink-5180754-p2673094
+[2023-11-09T18:16:11.514+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-pedraria-amarelo-5169097-p1882100
+[2023-11-09T18:16:13.052+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-pedraria-amarelo-5169097-p1882100
+[2023-11-09T18:16:14.268+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tresse-laranja-5169757-p1893110
+[2023-11-09T18:16:15.670+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tresse-laranja-5169757-p1893110
+[2023-11-09T18:16:16.622+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-verde-5166882-p1690019
+[2023-11-09T18:16:17.908+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-verde-5166882-p1690019
+[2023-11-09T18:16:19.064+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-roxo-5175684-p2622172
+[2023-11-09T18:16:20.610+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-roxo-5175684-p2622172
+[2023-11-09T18:16:21.803+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-tiras-tresse-metalizado-color-5170504-p2580532
+[2023-11-09T18:16:22.383+0000] {local_task_job_runner.py:274} WARNING - Recorded pid 3185 does not match the current pid 3008
+[2023-11-09T18:16:22.384+0000] {process_utils.py:131} INFO - Sending 15 to group 3008. PIDs of all processes in the group: [3019, 3023, 3095, 3097, 3098, 3116, 3132, 3115, 3008]
+[2023-11-09T18:16:22.384+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 3008
+[2023-11-09T18:16:22.384+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-11-09T18:16:22.394+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/task_definitions.py", line 135, in print_items
+    page.goto(url, timeout=0)
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/sync_api/_generated.py", line 9303, in goto
+    self._sync(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_sync_base.py", line 107, in _sync
+    self._dispatcher_fiber.switch()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/sync_api/_context_manager.py", line 56, in greenlet_main
+    self._loop.run_until_complete(self._connection.run_as_sync())
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/local/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1634, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-11-09T18:16:22.400+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=query_scraper, task_id=print_items, execution_date=20231109T171926, start_date=20231109T181622, end_date=20231109T181622
+[2023-11-09T18:16:22.412+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 30 for task print_items (Task received SIGTERM signal; 3008)
+[2023-11-09T18:16:22.420+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3097, status='terminated', started='18:14:31') (3097) terminated with exit code None
+[2023-11-09T18:16:22.420+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3098, status='terminated', started='18:14:31') (3098) terminated with exit code None
+[2023-11-09T18:16:22.420+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3115, status='terminated', started='18:14:31') (3115) terminated with exit code None
+[2023-11-09T18:16:22.421+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3116, status='terminated', started='18:14:31') (3116) terminated with exit code None
+[2023-11-09T18:16:22.473+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3132, status='terminated', started='18:14:31') (3132) terminated with exit code None
+[2023-11-09T18:16:22.474+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3019, status='terminated', started='18:14:30') (3019) terminated with exit code None
+[2023-11-09T18:16:22.474+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3023, status='terminated', started='18:14:30') (3023) terminated with exit code None
+[2023-11-09T18:16:22.474+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3008, status='terminated', exitcode=1, started='18:14:30') (3008) terminated with exit code 1
+[2023-11-09T18:16:22.474+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3095, status='terminated', started='18:14:31') (3095) terminated with exit code None

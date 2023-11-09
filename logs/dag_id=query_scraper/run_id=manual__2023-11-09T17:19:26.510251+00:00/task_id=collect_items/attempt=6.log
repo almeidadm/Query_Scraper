@@ -1,0 +1,72 @@
+[2023-11-09T17:57:32.920+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:57:32.926+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:57:32.926+0000] {taskinstance.py:1361} INFO - Starting attempt 6 of 6
+[2023-11-09T17:57:32.940+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): collect_items> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T17:57:32.945+0000] {standard_task_runner.py:57} INFO - Started process 116 to run task
+[2023-11-09T17:57:32.946+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'collect_items', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmpnvf3oa8j']
+[2023-11-09T17:57:32.948+0000] {standard_task_runner.py:85} INFO - Job 20: Subtask collect_items
+[2023-11-09T17:57:32.975+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [running]> on host bc76e66ea169
+[2023-11-09T17:57:33.014+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='collect_items' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T17:57:33.040+0000] {logger.py:18} INFO - Searching query: BOLSA FEMININA TIRACOLO EM NAPA  
+[2023-11-09T17:57:33.525+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=bolsa+feminina+tiracolo+em+napa++&o=ascPrice
+[2023-11-09T17:57:38.186+0000] {scrapers.py:127} INFO - number of collected prices: 60
+[2023-11-09T17:57:38.187+0000] {logger.py:18} INFO - Searching query: SANDALIA MASCULINA ADULTO EM COURO  
+[2023-11-09T17:57:38.550+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sandalia+masculina+adulto+em+couro++&o=ascPrice
+[2023-11-09T17:57:41.253+0000] {scrapers.py:127} INFO - number of collected prices: 10
+[2023-11-09T17:57:41.253+0000] {logger.py:18} INFO - Searching query: SANDÁLIA FEMININA ADULTO EM NAPA  RASTEIRA
+[2023-11-09T17:57:41.527+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sandália+feminina+adulto+em+napa++rasteira&o=ascPrice
+[2023-11-09T17:57:46.778+0000] {scrapers.py:127} INFO - number of collected prices: 60
+[2023-11-09T17:57:46.778+0000] {logger.py:18} INFO - Searching query: SANDÁLIA MASCULINA ADULTO EM CAMURÇA  
+[2023-11-09T17:57:47.076+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sandália+masculina+adulto+em+camurça++&o=ascPrice
+[2023-11-09T17:57:50.017+0000] {scrapers.py:127} INFO - number of collected prices: 7
+[2023-11-09T17:57:50.018+0000] {logger.py:18} INFO - Searching query: SANDÁLIA MASCULINA ADULTO EM NAPA  
+[2023-11-09T17:57:50.315+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sandália+masculina+adulto+em+napa++&o=ascPrice
+[2023-11-09T17:57:53.017+0000] {scrapers.py:127} INFO - number of collected prices: 5
+[2023-11-09T17:57:53.017+0000] {logger.py:18} INFO - Searching query: SAPATENIS MASCULINO ADULTO EM COURO  
+[2023-11-09T17:57:53.310+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sapatenis+masculino+adulto+em+couro++&o=ascPrice
+[2023-11-09T17:57:58.671+0000] {scrapers.py:127} INFO - number of collected prices: 56
+[2023-11-09T17:57:58.671+0000] {logger.py:18} INFO - Searching query: SAPATENIS MASCULINO ADULTO EM LONA  
+[2023-11-09T17:57:59.001+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sapatenis+masculino+adulto+em+lona++&o=ascPrice
+[2023-11-09T17:58:01.344+0000] {scrapers.py:127} INFO - number of collected prices: 6
+[2023-11-09T17:58:01.345+0000] {logger.py:18} INFO - Searching query: SAPATENIS MASCULINO ADULTO EM NAPA  
+[2023-11-09T17:58:01.666+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sapatenis+masculino+adulto+em+napa++&o=ascPrice
+[2023-11-09T17:58:06.840+0000] {scrapers.py:127} INFO - number of collected prices: 60
+[2023-11-09T17:58:06.841+0000] {logger.py:18} INFO - Searching query: SAPATENIS MASCULINO ADULTO EM NOBUCK  
+[2023-11-09T17:58:07.147+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sapatenis+masculino+adulto+em+nobuck++&o=ascPrice
+[2023-11-09T17:58:11.021+0000] {scrapers.py:127} INFO - number of collected prices: 26
+[2023-11-09T17:58:11.021+0000] {logger.py:18} INFO - Searching query: SAPATO FEMININO ADULTO EM NAPA  SCARPIN
+[2023-11-09T17:58:11.311+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=sapato+feminino+adulto+em+napa++scarpin&o=ascPrice
+[2023-11-09T17:58:16.482+0000] {scrapers.py:127} INFO - number of collected prices: 60
+[2023-11-09T17:58:16.482+0000] {logger.py:18} INFO - Searching query: TÊNIS MASCULINO ADULTO ADIDAS 
+[2023-11-09T17:58:16.781+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=tênis+masculino+adulto+adidas+&o=ascPrice
+[2023-11-09T17:58:20.909+0000] {scrapers.py:127} INFO - number of collected prices: 29
+[2023-11-09T17:58:20.909+0000] {logger.py:18} INFO - Searching query: TÊNIS MASCULINO ADULTO ASICS 
+[2023-11-09T17:58:21.226+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=tênis+masculino+adulto+asics+&o=ascPrice
+[2023-11-09T17:58:24.313+0000] {scrapers.py:127} INFO - number of collected prices: 14
+[2023-11-09T17:58:24.314+0000] {logger.py:18} INFO - Searching query: TÊNIS MASCULINO ADULTO MIZUNO 
+[2023-11-09T17:58:24.616+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=tênis+masculino+adulto+mizuno+&o=ascPrice
+[2023-11-09T17:58:28.959+0000] {scrapers.py:127} INFO - number of collected prices: 39
+[2023-11-09T17:58:28.959+0000] {logger.py:18} INFO - Searching query: TÊNIS MASCULINO ADULTO NIKE 
+[2023-11-09T17:58:29.267+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=tênis+masculino+adulto+nike+&o=ascPrice
+[2023-11-09T17:58:33.813+0000] {scrapers.py:127} INFO - number of collected prices: 39
+[2023-11-09T17:58:33.813+0000] {logger.py:18} INFO - Searching query: TÊNIS MASCULINO ADULTO OLIMPIKUS 
+[2023-11-09T17:58:34.109+0000] {scrapers.py:55} INFO - Current URL: https://www.stz.com.br/pesquisa?t=tênis+masculino+adulto+olimpikus+&o=ascPrice
+[2023-11-09T17:58:38.647+0000] {scrapers.py:127} INFO - number of collected prices: 60
+[2023-11-09T17:58:38.657+0000] {logger.py:18} INFO - Collected Dataframe:                                              title  ... id_item
+0    Bolsa Tiracolo Pequena Gabriela Essenciais...  ...       0
+1    Bolsa Tiracolo Pequena STZ Corrente Textur...  ...       0
+2    Bolsa Tiracolo Pequena Gabriela Essenciais...  ...       0
+3    Bolsa Tiracolo Pequena Gabriela Tacha Text...  ...       0
+4    Bolsa Tiracolo Pequena Gabriela Essenciais...  ...       0
+..                                             ...  ...     ...
+526  Tênis Olympikus Volcan Esportivo Masculino...  ...      14
+527  Tênis Olympikus Proof 3 Esportivo Masculin...  ...      14
+528  Tênis Olympikus Soma Esportivo Masculino K...  ...      14
+529  Tênis Olympikus Soma Esportivo Masculino M...  ...      14
+530  Tênis Olympikus Soma Esportivo Masculino K...  ...      14
+
+[531 rows x 6 columns]
+[2023-11-09T17:58:38.658+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-09T17:58:38.664+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=query_scraper, task_id=collect_items, execution_date=20231109T171926, start_date=20231109T175732, end_date=20231109T175838
+[2023-11-09T17:58:38.698+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-09T17:58:38.720+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

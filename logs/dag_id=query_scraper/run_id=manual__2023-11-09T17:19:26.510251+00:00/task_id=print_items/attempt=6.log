@@ -1,0 +1,30 @@
+[2023-11-09T18:22:30.403+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:22:30.412+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:22:30.412+0000] {taskinstance.py:1361} INFO - Starting attempt 6 of 6
+[2023-11-09T18:22:30.421+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): print_items> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T18:22:30.427+0000] {standard_task_runner.py:57} INFO - Started process 3744 to run task
+[2023-11-09T18:22:30.429+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'print_items', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmp17fdbxko']
+[2023-11-09T18:22:30.431+0000] {standard_task_runner.py:85} INFO - Job 34: Subtask print_items
+[2023-11-09T18:22:30.465+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.print_items manual__2023-11-09T17:19:26.510251+00:00 [running]> on host bc76e66ea169
+[2023-11-09T18:22:30.517+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='print_items' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T18:22:30.857+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-vinho-5155195-p1151165
+[2023-11-09T18:22:32.829+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-stz-corrente-texturizada-bege-5182130-p2686465
+[2023-11-09T18:22:34.053+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-azul-5176913-p2630920
+[2023-11-09T18:22:35.177+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-tacha-texturizada-laranja-5163044-p1656990
+[2023-11-09T18:22:36.327+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-coral-5176912-p2630919
+[2023-11-09T18:22:37.851+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-ziper-amarelo-5161372-p1637831
+[2023-11-09T18:22:39.155+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-verde-5175691-p2622332
+[2023-11-09T18:22:40.502+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-texturizada-rosa-5149353-p163495
+[2023-11-09T18:22:40.516+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-11-09T18:22:40.518+0000] {process_utils.py:131} INFO - Sending 15 to group 3744. PIDs of all processes in the group: [3755, 3759, 3831, 3833, 3834, 3851, 3867, 3850, 3744]
+[2023-11-09T18:22:40.518+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 3744
+[2023-11-09T18:22:40.518+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-11-09T18:22:40.545+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3759, status='terminated', started='18:22:30') (3759) terminated with exit code None
+[2023-11-09T18:22:40.545+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3833, status='terminated', started='18:22:30') (3833) terminated with exit code None
+[2023-11-09T18:22:40.546+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3850, status='terminated', started='18:22:30') (3850) terminated with exit code None
+[2023-11-09T18:22:40.546+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3851, status='terminated', started='18:22:30') (3851) terminated with exit code None
+[2023-11-09T18:22:40.572+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3744, status='terminated', exitcode=0, started='18:22:29') (3744) terminated with exit code 0
+[2023-11-09T18:22:40.573+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3831, status='terminated', started='18:22:30') (3831) terminated with exit code None
+[2023-11-09T18:22:40.573+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3755, status='terminated', started='18:22:30') (3755) terminated with exit code None
+[2023-11-09T18:22:40.573+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3834, status='terminated', started='18:22:30') (3834) terminated with exit code None
+[2023-11-09T18:22:40.573+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=3867, status='terminated', started='18:22:30') (3867) terminated with exit code None

@@ -1,0 +1,99 @@
+[2023-11-09T17:40:30.801+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:40:30.810+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T17:40:30.811+0000] {taskinstance.py:1361} INFO - Starting attempt 4 of 4
+[2023-11-09T17:40:30.830+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): collect_items> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T17:40:30.836+0000] {standard_task_runner.py:57} INFO - Started process 165 to run task
+[2023-11-09T17:40:30.839+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'collect_items', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmp1j9himuy']
+[2023-11-09T17:40:30.843+0000] {standard_task_runner.py:85} INFO - Job 15: Subtask collect_items
+[2023-11-09T17:40:30.874+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.collect_items manual__2023-11-09T17:19:26.510251+00:00 [running]> on host 273cd10b3230
+[2023-11-09T17:40:30.917+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='collect_items' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T17:40:30.946+0000] {logger.py:18} INFO - Searching query: BOLSA FEMININA TIRACOLO EM NAPA  
+[2023-11-09T17:40:31.229+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/task_definitions.py", line 98, in collect
+    scraper.scrape(item['QUERY'], i, f'{output_path}/prints/pesquisa')
+  File "/opt/airflow/dags/resources/scrapers.py", line 120, in scrape
+    browser = playwright.chromium.launch()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/sync_api/_generated.py", line 14743, in launch
+    self._sync(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_sync_base.py", line 109, in _sync
+    return task.result()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_browser_type.py", line 96, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 482, in wrap_api_call
+    return await cb()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 97, in inner_send
+    result = next(iter(done)).result()
+playwright._impl._api_types.Error: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Please install them with the following command:      ║
+║                                                      ║
+║     sudo playwright install-deps                     ║
+║                                                      ║
+║ Alternatively, use apt:                              ║
+║     sudo apt-get install libglib2.0-0\               ║
+║         libnss3\                                     ║
+║         libnspr4\                                    ║
+║         libatk1.0-0\                                 ║
+║         libatk-bridge2.0-0\                          ║
+║         libcups2\                                    ║
+║         libdrm2\                                     ║
+║         libdbus-1-3\                                 ║
+║         libxcb1\                                     ║
+║         libxkbcommon0\                               ║
+║         libatspi2.0-0\                               ║
+║         libx11-6\                                    ║
+║         libxcomposite1\                              ║
+║         libxdamage1\                                 ║
+║         libxext6\                                    ║
+║         libxfixes3\                                  ║
+║         libxrandr2\                                  ║
+║         libgbm1\                                     ║
+║         libpango-1.0-0\                              ║
+║         libcairo2\                                   ║
+║         libasound2                                   ║
+║                                                      ║
+║ <3 Playwright Team                                   ║
+╚══════════════════════════════════════════════════════╝
+[2023-11-09T17:40:31.234+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=query_scraper, task_id=collect_items, execution_date=20231109T171926, start_date=20231109T174030, end_date=20231109T174031
+[2023-11-09T17:40:31.241+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 15 for task collect_items (
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Please install them with the following command:      ║
+║                                                      ║
+║     sudo playwright install-deps                     ║
+║                                                      ║
+║ Alternatively, use apt:                              ║
+║     sudo apt-get install libglib2.0-0\               ║
+║         libnss3\                                     ║
+║         libnspr4\                                    ║
+║         libatk1.0-0\                                 ║
+║         libatk-bridge2.0-0\                          ║
+║         libcups2\                                    ║
+║         libdrm2\                                     ║
+║         libdbus-1-3\                                 ║
+║         libxcb1\                                     ║
+║         libxkbcommon0\                               ║
+║         libatspi2.0-0\                               ║
+║         libx11-6\                                    ║
+║         libxcomposite1\                              ║
+║         libxdamage1\                                 ║
+║         libxext6\                                    ║
+║         libxfixes3\                                  ║
+║         libxrandr2\                                  ║
+║         libgbm1\                                     ║
+║         libpango-1.0-0\                              ║
+║         libcairo2\                                   ║
+║         libasound2                                   ║
+║                                                      ║
+║ <3 Playwright Team                                   ║
+╚══════════════════════════════════════════════════════╝; 165)
+[2023-11-09T17:40:31.255+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-09T17:40:31.285+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

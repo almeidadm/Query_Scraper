@@ -1,0 +1,556 @@
+[2023-11-09T18:05:47.721+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.collect_items_specifications manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:05:47.726+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.collect_items_specifications manual__2023-11-09T17:19:26.510251+00:00 [queued]>
+[2023-11-09T18:05:47.726+0000] {taskinstance.py:1361} INFO - Starting attempt 7 of 7
+[2023-11-09T18:05:47.741+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): collect_items_specifications> on 2023-11-09 17:19:26.510251+00:00
+[2023-11-09T18:05:47.746+0000] {standard_task_runner.py:57} INFO - Started process 2576 to run task
+[2023-11-09T18:05:47.748+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'collect_items_specifications', 'manual__2023-11-09T17:19:26.510251+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmpivkransc']
+[2023-11-09T18:05:47.750+0000] {standard_task_runner.py:85} INFO - Job 27: Subtask collect_items_specifications
+[2023-11-09T18:05:47.775+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.collect_items_specifications manual__2023-11-09T17:19:26.510251+00:00 [running]> on host bc76e66ea169
+[2023-11-09T18:05:47.815+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='collect_items_specifications' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T17:19:26.510251+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T17:19:26.510251+00:00'
+[2023-11-09T18:05:47.838+0000] {logger.py:18} INFO - Number of urls to be requested: 264
+[2023-11-09T18:05:48.159+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-amarracao-fivela-preto-5172584-p2602177
+[2023-11-09T18:05:50.313+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:05:50.313+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-downshifter-12-esportivo-masculino-marinho-5183392-p2701367
+[2023-11-09T18:05:51.357+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:05:51.357+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-drapeada-verde-5157875-p1179434
+[2023-11-09T18:05:52.246+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 14 cm  Largura: 21cm  Profundidade: 5 cm  Medidas da alça: 110 cm no furo do meio      Compartimentos internos: Um bolso          
+[2023-11-09T18:05:52.246+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-downshifter-11-esportivo-masculino-preto-5163344-p1658777
+[2023-11-09T18:05:53.205+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido       Ocasião de Uso: Corrida       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:05:53.205+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-mac-jac-recortes-couro-marrom-5167033-p1690165
+[2023-11-09T18:05:54.177+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis          
+[2023-11-09T18:05:54.177+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-pespontos-perfuros-preto-5181650-p2680493
+[2023-11-09T18:05:55.137+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:05:55.137+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-fino-tiras-cruzadas-nude-5182983-p2694831
+[2023-11-09T18:05:56.066+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 8cm      Tipo de Salto: Fino      Bico: Fino          
+[2023-11-09T18:05:56.066+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-tiras-largas-fivelas-camurca-bege-5187753-p2739869
+[2023-11-09T18:05:57.028+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Camurça      Bico: Redondo            
+[2023-11-09T18:05:57.028+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-marte-esportivo-masculino-preto-5187852-p2740555
+[2023-11-09T18:05:58.081+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:05:58.081+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-tiras-fivela-preto-5183641-p2703042
+[2023-11-09T18:05:59.080+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Napa            
+[2023-11-09T18:05:59.080+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-pagani-texturizado-vermelho-5159747-p1616158
+[2023-11-09T18:06:00.508+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 17 cm  Largura: 25 cm  Medida da alça: 110 cm no furo do meio            
+[2023-11-09T18:06:00.508+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-vinho-5155195-p1151165
+[2023-11-09T18:06:01.632+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 17 cm  Largura: 26 cm  Profundidade: 03 cm  Medida da alça: 110 cm no furo do meio            
+[2023-11-09T18:06:01.632+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-recortes-jeans-marinho-5175639-p2625094
+[2023-11-09T18:06:02.607+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Jeans       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:06:02.607+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-taca-tiras-no-strass-nude-5190634-p2767613
+[2023-11-09T18:06:03.582+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9,5cm      Tipo de Salto: Taça      Bico: Fino          
+[2023-11-09T18:06:03.582+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-nude-5171138-p2587636
+[2023-11-09T18:06:04.496+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16 cm  Largura: 24 cm  Profundidade: 04 cm  Medida da alça: 110 cm no furo do meio          
+[2023-11-09T18:06:04.496+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-washed-ziper-perfuros-couro-caramelo-5184495-p2713401
+[2023-11-09T18:06:05.437+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:06:05.437+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-listras-nobuck-marinho-5188307-p2746164
+[2023-11-09T18:06:07.407+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:06:07.407+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-caramelo-5191396-p2775889
+[2023-11-09T18:06:08.414+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:06:08.414+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-preto-5163395-p1659093
+[2023-11-09T18:06:09.411+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16 cm  Largura: 21 cm  Profundidade: 05 cm  Medida da alça: 110 cm no furo do meio          
+[2023-11-09T18:06:09.412+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-preto-5183425-p2701635
+[2023-11-09T18:06:10.490+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:10.490+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-wave-mirai-4-esportivo-masculino-marinho-5171582-p2593246
+[2023-11-09T18:06:11.384+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:11.384+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-pedraria-amarelo-5169097-p1882100
+[2023-11-09T18:06:12.913+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:06:12.913+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-waffle-debut-jogging-masculino-camurca-preto-5177884-p2641947
+[2023-11-09T18:06:13.796+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro      Material: Tecido       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Camurça            
+[2023-11-09T18:06:13.796+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-next-esportivo-masculino-preto-5186631-p2732755
+[2023-11-09T18:06:15.462+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:15.463+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-cool-ride-esportivo-masculino-knit-grafite-5184477-p2712987
+[2023-11-09T18:06:16.455+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Esportivo        Acabamento: Knit            
+[2023-11-09T18:06:16.455+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-beira-rio-aberto-salto-fino-elastico-off-white-5181254-p2677740
+[2023-11-09T18:06:17.523+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9,5 cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:06:17.524+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-wave-falcon-4-esportivo-masculino-preto-5178160-p2645574
+[2023-11-09T18:06:18.463+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh            
+[2023-11-09T18:06:18.463+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-grosso-amarracao-preto-5178857-p2655100
+[2023-11-09T18:06:19.475+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 6cm      Tipo de Salto: Grosso      Bico: Fino            
+[2023-11-09T18:06:19.475+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-geometrico-amarelo-5163560-p1659946
+[2023-11-09T18:06:20.493+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 13,5 cm  Largura: 20 cm  Profundidade: 6,5 cm  Medida da alça: 110 cm no furo do meio       Compartimentos internos: Dois bolsos            
+[2023-11-09T18:06:20.494+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-amarelo-5180755-p2673095
+[2023-11-09T18:06:21.479+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:06:21.480+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-ollie-legacy-pespontos-nobuck-preto-5164711-p1673055
+[2023-11-09T18:06:22.464+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:06:22.464+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-delta-esportivo-masculino-preto-5177878-p2641721
+[2023-11-09T18:06:23.514+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida       Ocasião de Uso: Dia a Dia      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:23.514+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-vizzano-aberto-salto-fino-amarracao-preto-5177528-p2636090
+[2023-11-09T18:06:24.536+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 6 cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:06:24.536+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-estilo-esportivo-masculino-grafite-5177855-p2641223
+[2023-11-09T18:06:25.556+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:25.556+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-jet-6-esportivo-masculino-preto-5193362-p2787642
+[2023-11-09T18:06:26.449+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh          
+[2023-11-09T18:06:26.449+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-lilas-5176908-p2630915
+[2023-11-09T18:06:27.388+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 17 cm  Largura: 26,5 cm  Profundidade: 12,5 cm   Medidas da alça: 110 cm no furo do meio      Compartimentos internos: Três bolsos            
+[2023-11-09T18:06:27.388+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-perfuros-listras-marinho-5171456-p2592797
+[2023-11-09T18:06:28.446+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:06:28.447+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-premium-flight-couro-preto-5184070-p2708167
+[2023-11-09T18:06:29.362+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:06:29.363+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-rushy-esportivo-masculino-vermelho-5177836-p2641218
+[2023-11-09T18:06:30.365+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:30.365+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-cyan-esportivo-masculino-marinho-5192374-p2782110
+[2023-11-09T18:06:31.427+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:06:31.427+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-ferracini-lexus-pespontos-couro-preto-5184293-p2710816
+[2023-11-09T18:06:32.371+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis          
+[2023-11-09T18:06:32.372+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-next-nature-esportivo-masculino-preto-5189383-p2756472
+[2023-11-09T18:06:33.332+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:06:33.332+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-wellness-esportivo-masculino-cinza-5104951-p50760
+[2023-11-09T18:06:34.410+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:34.411+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-iceberg-casual-detalhe-pespontos-marrom-5167400-p1711457
+[2023-11-09T18:06:36.338+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Napa            
+[2023-11-09T18:06:36.338+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-rasteira-liberte-detalhe-aplicacao-branco-5168156-p1722058
+[2023-11-09T18:06:37.318+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:06:37.318+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-germany-pespontos-nobuck-cinza-5188302-p2745933
+[2023-11-09T18:06:38.280+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:06:38.281+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-marrom-5179247-p2662104
+[2023-11-09T18:06:39.700+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:06:39.701+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-strass-tiras-amarelo-5165570-p1683154
+[2023-11-09T18:06:40.806+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:06:40.806+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-pespontos-pespontos-caramelo-5177832-p2641214
+[2023-11-09T18:06:42.731+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:06:42.731+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-aplicacao-verde-5173299-p2609402
+[2023-11-09T18:06:43.684+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:06:43.684+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-space-2-esportivo-masculino-preto-5177259-p2633904
+[2023-11-09T18:06:44.689+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:44.689+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-wave-falcon-4-esportivo-masculino-azul-5178142-p2645733
+[2023-11-09T18:06:45.605+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh            
+[2023-11-09T18:06:45.605+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-show-the-way-2-0-esportivo-masculino-preto-5172121-p2598414
+[2023-11-09T18:06:47.035+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:47.035+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-flatform-fivela-camurca-caramelo-5176024-p2626608
+[2023-11-09T18:06:47.932+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Camurça            
+[2023-11-09T18:06:47.932+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-lite-racer-3-0-esportivo-masculino-marinho-5183001-p2695392
+[2023-11-09T18:06:48.917+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:48.917+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-ziper-amarelo-5161372-p1637831
+[2023-11-09T18:06:50.722+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 17 cm  Largura: 26 cm  Profundidade: 03 cm  Medida da alça: 110 cm no furo do meio          
+[2023-11-09T18:06:50.722+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-space-3-esportivo-masculino-preto-5186213-p2729339
+[2023-11-09T18:06:51.818+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:51.819+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-vibracao-esportivo-masculino-preto-5183117-p2697026
+[2023-11-09T18:06:52.763+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:06:52.763+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-couro-preto-5171452-p2592286
+[2023-11-09T18:06:53.828+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:06:53.834+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-no-amarelo-5164289-p1667692
+[2023-11-09T18:06:54.896+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:06:54.896+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-asics-versablast-2-se-esportivo-masculino-neon-azul-5193178-p2786727
+[2023-11-09T18:06:56.804+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo       Estampa: Camuflado          
+[2023-11-09T18:06:56.804+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-tacha-texturizada-laranja-5163044-p1656990
+[2023-11-09T18:06:57.751+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 19,2 cm  Largura: 10 cm  Profundidade: 01 cm  Medida da alça: 110 cm no furo do meio      Compartimentos internos: Um bolso          
+[2023-11-09T18:06:57.751+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-polo-energy-pespontos-caramelo-5180287-p2670212
+[2023-11-09T18:06:58.797+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:06:58.797+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-strass-off-white-5181094-p2675449
+[2023-11-09T18:06:59.782+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:06:59.782+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-amarelo-5166931-p1690063
+[2023-11-09T18:07:00.684+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:07:00.684+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-asics-fuzeblast-se-esportivo-masculino-mesh-preto-5189857-p2760027
+[2023-11-09T18:07:03.287+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh          
+[2023-11-09T18:07:03.287+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-azul-5183422-p2701486
+[2023-11-09T18:07:04.195+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:07:04.195+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-listras-recortes-tecido-marinho-5187906-p2741445
+[2023-11-09T18:07:05.204+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Lona       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:07:05.204+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-duramo-sl-esportivo-masculino-marinho-5164550-p1670091
+[2023-11-09T18:07:06.279+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:06.279+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-washed-ziper-perfuros-couro-marrom-5184494-p2713400
+[2023-11-09T18:07:07.188+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:07:07.188+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-recortes-preto-5175942-p2625096
+[2023-11-09T18:07:08.185+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:07:08.185+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-flatform-fivelas-camurca-bege-5183628-p2702981
+[2023-11-09T18:07:09.209+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Camurça            
+[2023-11-09T18:07:09.209+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-meia-lua-laranja-5176911-p2630918
+[2023-11-09T18:07:10.076+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 15,5cm; Largura: 22cm; Profundidade: 7,5cm; Medida da alça: 110cm no furo do meio      Compartimentos internos: Um bolso          
+[2023-11-09T18:07:10.076+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-wellness-esportivo-masculino-marinho-5151715-p601861
+[2023-11-09T18:07:13.179+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:13.179+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-eros-casual-masculino-preto-5183475-p2702198
+[2023-11-09T18:07:14.109+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Napa            
+[2023-11-09T18:07:14.110+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-listra-preto-5191284-p2775882
+[2023-11-09T18:07:15.063+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:07:15.064+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-index-2-esportivo-masculino-vermelho-5177894-p2641728
+[2023-11-09T18:07:16.017+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:16.018+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-taca-detalhe-tira-preto-5183357-p2701045
+[2023-11-09T18:07:16.944+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 7cm      Tipo de Salto: Taça      Bico: Fino            
+[2023-11-09T18:07:16.944+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-logo-barbicacho-pink-5189463-p2757197
+[2023-11-09T18:07:17.879+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 13cm; Largura: 19cm; Profundidade: 6,5cm; Alça: 110cm no furo do meio      Compartimentos internos: Um bolso          
+[2023-11-09T18:07:17.879+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-stz-corrente-texturizada-bege-5182130-p2686465
+[2023-11-09T18:07:19.624+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 11 cm  Largura: 19 cm  Profundidade: 3,5 cm            
+[2023-11-09T18:07:19.624+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-moleca-anabela-detalhe-pespontos-preto-5193594-p2788920
+[2023-11-09T18:07:20.541+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 2,5cm      Tipo de Salto: Anabela      Bico: Fino          
+[2023-11-09T18:07:20.541+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-couro-preto-5177536-p2636098
+[2023-11-09T18:07:21.468+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis      Bico: Redondo            
+[2023-11-09T18:07:21.468+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/olympikus-delta-esportivo-masculino-neon-preto-5178956-p2656549
+[2023-11-09T18:07:23.483+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:23.483+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-155g-ultraleve-esportivo-masculino-preto-5165536-p1682556
+[2023-11-09T18:07:24.509+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:24.509+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-democrata-denim-go-couro-marrom-5167467-p1711533
+[2023-11-09T18:07:25.456+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:07:25.456+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-vibracao-esportivo-masculino-preto-5177889-p2641952
+[2023-11-09T18:07:26.429+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:26.429+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-caramelo-5178704-p2654492
+[2023-11-09T18:07:27.379+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:07:27.379+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5175690-p2622331
+[2023-11-09T18:07:28.361+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura:  16 cm  Largura:  25 cm  Profundidade:  3 cm  Medida da alça: 110 cm no furo do meio            
+[2023-11-09T18:07:28.361+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-recortes-off-white-5171520-p2592420
+[2023-11-09T18:07:29.272+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:07:29.272+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-hotfix-amarelo-5166770-p1689903
+[2023-11-09T18:07:30.394+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:07:30.394+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-moleca-anabela-detalhe-pespontos-nude-5193593-p2788894
+[2023-11-09T18:07:31.300+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 2,5cm      Tipo de Salto: Anabela      Bico: Fino          
+[2023-11-09T18:07:31.300+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-coral-5176912-p2630919
+[2023-11-09T18:07:33.241+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16 cm Largura: 25 cm Profundidade: 03 cm Medida da alça: 110 cm no furo do meio             
+[2023-11-09T18:07:33.241+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-mac-jac-recortes-tecido-marinho-5164980-p1677009
+[2023-11-09T18:07:34.227+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Lona       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis          
+[2023-11-09T18:07:34.227+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-taca-amarracao-verde-5171573-p2593065
+[2023-11-09T18:07:35.264+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Taça      Bico: Fino            
+[2023-11-09T18:07:35.264+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-roxo-5175684-p2622172
+[2023-11-09T18:07:36.725+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:07:36.726+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-texturizado-caramelo-5192484-p2782475
+[2023-11-09T18:07:37.669+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:07:37.669+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5126476-p69332
+[2023-11-09T18:07:39.536+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sandália          
+[2023-11-09T18:07:39.536+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-mac-jac-detalhe-recortes-camurca-branco-5191433-p2776340
+[2023-11-09T18:07:40.526+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Camurça          
+[2023-11-09T18:07:40.526+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-wave-way-2-esportivo-masculino-marinho-5171591-p2593251
+[2023-11-09T18:07:41.990+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:41.991+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-verde-militar-5183207-p2698587
+[2023-11-09T18:07:43.085+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado          
+[2023-11-09T18:07:43.085+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-next-nature-esportivo-masculino-branco-5186601-p2732805
+[2023-11-09T18:07:44.086+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:44.086+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-ollie-detalhe-recortes-nobuck-preto-5164220-p1666603
+[2023-11-09T18:07:46.166+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:07:46.166+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-lite-racer-3-0-esportivo-masculino-preto-5172113-p2598360
+[2023-11-09T18:07:47.627+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh            
+[2023-11-09T18:07:47.627+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-nude-5182854-p2693478
+[2023-11-09T18:07:48.896+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:07:48.896+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-recortes-nobuck-preto-5187637-p2739260
+[2023-11-09T18:07:49.891+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck          
+[2023-11-09T18:07:49.891+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-iceberg-recortes-perfuros-marrom-5167399-p1711456
+[2023-11-09T18:07:51.413+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:07:51.413+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-listras-recortes-tecido-caramelo-5187907-p2741446
+[2023-11-09T18:07:52.576+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Lona      Material: Tecido       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:07:52.576+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapato-social-ferracini-lexus-couro-preto-5158711-p1188772
+[2023-11-09T18:07:53.493+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:07:53.493+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-preto-5189796-p2759617
+[2023-11-09T18:07:54.445+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:07:54.445+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-falcon-3-esportivo-masculino-preto-5171592-p2593252
+[2023-11-09T18:07:55.555+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:55.555+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-preto-5176597-p2628839
+[2023-11-09T18:07:57.564+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:07:57.564+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-232g-ultraleve-esportivo-masculino-azul-5177833-p2641215
+[2023-11-09T18:07:58.524+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:07:58.524+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-beira-rio-aberto-aberto-salto-fino-elastico-preto-5184920-p2715518
+[2023-11-09T18:07:59.428+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9,5cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:07:59.428+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-gabriela-texturizada-azul-5157743-p1179328
+[2023-11-09T18:08:00.419+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 15 cm  Largura: 22 cm  Profundidade: 6,5 cm          
+[2023-11-09T18:08:00.419+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-casual-wear-elastico-couro-marinho-5191925-p2779897
+[2023-11-09T18:08:01.387+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis          
+[2023-11-09T18:08:01.387+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-vazados-amarelo-5170378-p2578709
+[2023-11-09T18:08:02.377+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado          
+[2023-11-09T18:08:02.377+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-mega-esportivo-masculino-azul-5177867-p2641468
+[2023-11-09T18:08:03.351+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:08:03.352+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-asics-fuzeblast-se-esportivo-preto-5183250-p2699317
+[2023-11-09T18:08:04.232+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Metalizado            
+[2023-11-09T18:08:04.232+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-jet-5-esportivo-masculino-mesh-azul-5177268-p2633906
+[2023-11-09T18:08:05.288+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh          
+[2023-11-09T18:08:05.288+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-legend-essential-2-esportivo-masculino-preto-5173415-p2610260
+[2023-11-09T18:08:06.305+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:08:06.305+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-amarelo-5161374-p1637833
+[2023-11-09T18:08:07.302+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 15 cm  Largura: 21,5 cm  Profundidade 07 cm  Medida da alça: 110 cm no furo do meio      Compartimentos internos: Um bolso          
+[2023-11-09T18:08:07.302+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-democrata-loop-texturizado-couro-off-white-5179513-p2662930
+[2023-11-09T18:08:09.180+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:08:09.181+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-azul-5185719-p2724468
+[2023-11-09T18:08:10.364+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16cm  Largura: 24,5cm  Profundidade: 02cm             
+[2023-11-09T18:08:10.364+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-gabriela-detalhe-em-recortes-verde-5157853-p1179388
+[2023-11-09T18:08:11.283+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 13 cm  Largura: 20 cm  Profundidade: 5,5 cm  Medida da alça: 110 cm no furo do meio              
+[2023-11-09T18:08:11.283+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-perfuros-ilhos-couro-marrom-5179557-p2663294
+[2023-11-09T18:08:12.251+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sandália            
+[2023-11-09T18:08:12.251+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-syerra-recortes-jeans-nobuck-preto-5182295-p2688259
+[2023-11-09T18:08:13.456+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Jeans      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck          
+[2023-11-09T18:08:13.456+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-rasteira-liberte-tira-tresse-caramelo-5169364-p1888342
+[2023-11-09T18:08:14.612+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:08:14.613+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-azul-5170466-p2579968
+[2023-11-09T18:08:15.601+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:08:15.601+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-lite-racer-3-0-esportivo-masculino-preto-5173611-p2612495
+[2023-11-09T18:08:16.659+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Corrida       Ocasião de Uso: Dia a Dia      Modelo: Tênis Esportivo             
+[2023-11-09T18:08:16.660+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-legacy-perfuros-nobuck-preto-5182281-p2688258
+[2023-11-09T18:08:17.643+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck          
+[2023-11-09T18:08:17.643+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-branco-5170522-p2580577
+[2023-11-09T18:08:19.018+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:08:19.018+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-reto-pespontos-preto-5178826-p2655097
+[2023-11-09T18:08:20.074+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 10cm      Tipo de Salto: Reto      Bico: Fino            
+[2023-11-09T18:08:20.074+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-vermelho-5183411-p2701371
+[2023-11-09T18:08:20.978+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:08:20.978+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-index-2-esportivo-masculino-marinho-5177891-p2641725
+[2023-11-09T18:08:22.531+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:08:22.531+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-azul-5157744-p1179332
+[2023-11-09T18:08:23.508+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura:  15 cm  Largura:  25 cm  Profundidade:  03 cm  Medidas da alça:  110 cm no furo do meio           
+[2023-11-09T18:08:23.509+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-mac-jac-detalhe-recortes-couro-branco-5169605-p1891209
+[2023-11-09T18:08:24.413+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:08:24.414+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-ferracini-recortes-couro-preto-5169776-p1893208
+[2023-11-09T18:08:25.358+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:08:25.358+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-advantage-base-casual-masculino-branco-5188206-p2744905
+[2023-11-09T18:08:26.262+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Napa            
+[2023-11-09T18:08:26.262+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-geometrico-elastico-coral-5180168-p2669225
+[2023-11-09T18:08:27.295+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 7cm      Tipo de Salto: Geométrico      Bico: Fino            
+[2023-11-09T18:08:27.295+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-lap-946-esportivo-masculino-grafite-5165544-p1682564
+[2023-11-09T18:08:28.407+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:08:28.407+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-essenciais-salto-fino-pespontos-laranja-5180678-p2672668
+[2023-11-09T18:08:29.580+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:08:29.580+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-pink-5180754-p2673094
+[2023-11-09T18:08:31.582+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:08:31.582+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-pespontos-recortes-branco-5180256-p2670210
+[2023-11-09T18:08:32.609+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:08:32.609+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-galaxy-6-esportivo-masculino-preto-5182896-p2695258
+[2023-11-09T18:08:33.773+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Dia a Dia      Modelo: Tênis Esportivo           
+[2023-11-09T18:08:33.774+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-legacy-perfuros-nobuck-bege-5182296-p2688260
+[2023-11-09T18:08:34.741+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck          
+[2023-11-09T18:08:34.741+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-pespontos-perfuros-marrom-5181651-p2680494
+[2023-11-09T18:08:35.710+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:08:35.710+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-pespontos-couro-marrom-5183473-p2702196
+[2023-11-09T18:08:36.676+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sandália            
+[2023-11-09T18:08:36.676+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5149350-p163491
+[2023-11-09T18:08:37.615+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura:  15 cm  Largura:  25 cm  Profundidade:  03 cm  Medidas da alça: 110 cm no furo do meio             
+[2023-11-09T18:08:37.615+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-wave-mirai-4-esportivo-masculino-knit-grafite-5178150-p2645573
+[2023-11-09T18:08:38.654+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Knit            
+[2023-11-09T18:08:38.654+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-court-royale-2-masculino-branco-5170499-p2580427
+[2023-11-09T18:08:39.599+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Skate      Modelo: Tênis Casual       Acabamento: Napa            
+[2023-11-09T18:08:39.599+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-verde-5179707-p2664371
+[2023-11-09T18:08:40.513+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 17 cm  Largura: 26,5 cm  Profundidade: 12,5 cm   Medidas da alça: 110 cm no furo do meio      Compartimentos internos: Três bolsos            
+[2023-11-09T18:08:40.513+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-downshifter-12-esportivo-masculino-branco-5189381-p2756470
+[2023-11-09T18:08:41.434+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:08:41.434+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-stretch-elastico-perfuros-couro-preto-5191938-p2779888
+[2023-11-09T18:08:42.327+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro      Material: Tecido       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis          
+[2023-11-09T18:08:42.328+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-fino-pink-5165304-p1680594
+[2023-11-09T18:08:43.323+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 10 cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:08:43.324+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-listras-recortes-tecido-branco-5187908-p2741447
+[2023-11-09T18:08:44.322+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Lona       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:08:44.322+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-recortes-nobuck-jeans-marinho-5182297-p2688316
+[2023-11-09T18:08:46.100+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Jeans      Material: Tecido       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:08:46.100+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-tiras-detalhe-elos-preto-5183645-p2703046
+[2023-11-09T18:08:47.043+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Napa          
+[2023-11-09T18:08:47.043+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-marinho-5178799-p2654495
+[2023-11-09T18:08:48.174+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:08:48.174+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-pedraria-pink-5175625-p2621619
+[2023-11-09T18:08:49.147+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:08:49.148+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-moleca-anabela-detalhe-laco-matelasse-preto-5190489-p2765860
+[2023-11-09T18:08:50.660+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 2.5cm      Tipo de Salto: Anabela      Bico: Fino            
+[2023-11-09T18:08:50.660+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-space-3-esportivo-masculino-marinho-5191581-p2778060
+[2023-11-09T18:08:51.565+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:08:51.565+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230-p2744811
+[2023-11-09T18:08:52.511+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Napa          
+[2023-11-09T18:08:52.511+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-index-3-esportivo-masculino-preto-5187851-p2740554
+[2023-11-09T18:08:54.766+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:08:54.767+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-tresse-metalizada-rosa-5164187-p1667191
+[2023-11-09T18:08:55.724+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Metalizado       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:08:55.724+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-space-2-esportivo-masculino-cinza-5171600-p2593480
+[2023-11-09T18:08:56.772+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:08:56.772+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tresse-laranja-5169757-p1893110
+[2023-11-09T18:08:57.699+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:08:57.699+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5169466-p1889884
+[2023-11-09T18:08:58.657+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sandália            
+[2023-11-09T18:08:58.657+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-democrata-denim-luke-masculino-camurca-preto-5188147-p2744136
+[2023-11-09T18:09:00.113+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Camurça          
+[2023-11-09T18:09:00.114+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-moleca-flow-anabela-pespontos-caramelo-5185018-p2717556
+[2023-11-09T18:09:00.990+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 3cm      Tipo de Salto: Anabela      Bico: Redondo            
+[2023-11-09T18:09:00.990+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-vs-pace-2-0-street-masculino-preto-5188242-p2744911
+[2023-11-09T18:09:01.911+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Skate      Modelo: Tênis Casual       Acabamento: Napa          
+[2023-11-09T18:09:01.911+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-quest-5-esportivo-masculino-preto-5189375-p2756465
+[2023-11-09T18:09:02.794+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:02.794+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-moleca-anabela-detalhe-pespontos-coral-5193611-p2788923
+[2023-11-09T18:09:03.697+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 2,5cm      Tipo de Salto: Anabela      Bico: Fino          
+[2023-11-09T18:09:03.697+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-detalhe-fivela-off-white-5175877-p2624183
+[2023-11-09T18:09:04.656+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:09:04.656+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-preto-5183828-p2704999
+[2023-11-09T18:09:05.996+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:09:05.997+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-marinho-5188268-p2745649
+[2023-11-09T18:09:06.960+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:09:06.960+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-perfuros-couro-milk-off-white-5185189-p2719460
+[2023-11-09T18:09:07.961+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:09:07.962+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-recortes-perfuros-cinza-5175943-p2625097
+[2023-11-09T18:09:08.872+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:09:08.872+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-detalhe-laco-strass-verde-5175324-p2621337
+[2023-11-09T18:09:09.859+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:09:09.859+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-advantage-base-street-masculino-preto-5182534-p2690323
+[2023-11-09T18:09:11.505+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Napa            
+[2023-11-09T18:09:11.505+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-asics-versablast-2-se-esportivo-masculino-preto-5183216-p2698931
+[2023-11-09T18:09:12.435+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:12.436+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-pegada-anilina-perfuros-couro-marrom-5177388-p2636311
+[2023-11-09T18:09:13.358+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sandália            
+[2023-11-09T18:09:13.358+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-nobuck-oil-texturizado-cinza-5188334-p2746166
+[2023-11-09T18:09:14.375+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck          
+[2023-11-09T18:09:14.375+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-232g-ultraleve-esportivo-masculino-preto-5177860-p2641228
+[2023-11-09T18:09:15.326+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:15.327+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-cool-ride-esportivo-masculino-knit-preto-5177281-p2633908
+[2023-11-09T18:09:16.363+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia       Ocasião de Uso: Dia a Dia      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:16.363+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-237g-ultraleve-esportivo-masculino-grafite-5188151-p2743751
+[2023-11-09T18:09:18.511+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:18.511+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-marrom-5187713-p2739271
+[2023-11-09T18:09:19.444+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck            
+[2023-11-09T18:09:19.445+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-cool-ride-esportivo-masculino-marinho-5177283-p2633974
+[2023-11-09T18:09:20.608+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:20.608+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-goya-esportivo-masculino-preto-5192605-p2783251
+[2023-11-09T18:09:22.684+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:09:22.684+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-no-coral-5183206-p2698586
+[2023-11-09T18:09:23.666+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:09:23.667+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-tiras-fivela-camurca-verde-5183640-p2702983
+[2023-11-09T18:09:24.688+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Camurça            
+[2023-11-09T18:09:24.688+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-mac-jac-recortes-tecido-caramelo-5164985-p1677014
+[2023-11-09T18:09:25.729+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Lona       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:09:25.730+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-media-gabriela-texturizada-rosa-5149353-p163495
+[2023-11-09T18:09:26.639+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 25 cm  Largura: 15 cm  Profundidade: 03 cm  Medida da alça: 110 cm no furo do meio            
+[2023-11-09T18:09:26.640+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-grafite-5179358-p2662201
+[2023-11-09T18:09:28.192+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:09:28.192+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-asics-gel-shogun-5-esportivo-masculino-grafite-5189389-p2756650
+[2023-11-09T18:09:29.144+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:29.144+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-nude-5183208-p2698588
+[2023-11-09T18:09:30.115+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado          
+[2023-11-09T18:09:30.115+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-taca-amarracao-verde-5171838-p2595420
+[2023-11-09T18:09:31.059+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 8cm      Tipo de Salto: Taça      Bico: Fino            
+[2023-11-09T18:09:31.059+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-caramelo-5149352-p163484
+[2023-11-09T18:09:32.022+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 15 cm  Largura: 25 cm  Profundidade: 03 cm  Medidas da alça: 110 cm no furo do meio            
+[2023-11-09T18:09:32.022+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-cruzadas-verde-5168153-p1721773
+[2023-11-09T18:09:33.028+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:09:33.028+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-azul-5182864-p2693720
+[2023-11-09T18:09:33.994+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:09:33.994+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-penelope-aberto-salto-geometrico-pespontos-preto-5177038-p2631552
+[2023-11-09T18:09:35.047+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 7 cm      Tipo de Salto: Geométrico      Bico: Fino            
+[2023-11-09T18:09:35.047+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-mega-esportivo-masculino-cinza-5177879-p2641722
+[2023-11-09T18:09:36.020+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:36.020+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-texturizado-verde-5163551-p1659928
+[2023-11-09T18:09:36.986+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 15,5 cm  Largura: 17,5 cm  Profundidade: 07 cm  Medidas da alça: 110 cm no furo do meio      Compartimentos internos: Um bolso            
+[2023-11-09T18:09:36.987+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-marinho-5183827-p2704957
+[2023-11-09T18:09:38.620+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:09:38.620+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-off-white-5166862-p1689998
+[2023-11-09T18:09:39.586+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:09:39.586+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-reverb-esportivo-masculino-preto-5183152-p2697729
+[2023-11-09T18:09:40.706+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo           
+[2023-11-09T18:09:40.706+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-lite-racer-adapt-4-0-esportivo-masculino-preto-5178774-p2654025
+[2023-11-09T18:09:41.594+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh            
+[2023-11-09T18:09:41.594+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-legend-essential-2-esportivo-masculino-preto-5177983-p2643211
+[2023-11-09T18:09:42.523+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:42.523+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-off-white-5183139-p2700656
+[2023-11-09T18:09:43.497+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 11,5cm  Largura: 20,5cm  Profundidade: 5,5cm  Medida da alça: 110 cm no furo do meio      Compartimentos internos: Um bolso            
+[2023-11-09T18:09:43.498+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-1237g-ultraleve-esportivo-masculino-preto-5187857-p2740715
+[2023-11-09T18:09:44.427+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh            
+[2023-11-09T18:09:44.427+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-strass-amarelo-5166870-p1690007
+[2023-11-09T18:09:45.394+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:09:45.395+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-jet-6-esportivo-masculino-vermelho-5186308-p2730535
+[2023-11-09T18:09:46.346+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh            
+[2023-11-09T18:09:46.346+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-parafinado-nobuck-marrom-5188306-p2746163
+[2023-11-09T18:09:47.314+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Nobuck          
+[2023-11-09T18:09:47.314+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-metalizado-texturizado-marinho-5192485-p2782476
+[2023-11-09T18:09:48.556+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:09:48.557+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-tresse-preto-5166731-p1689867
+[2023-11-09T18:09:49.507+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Folha            
+[2023-11-09T18:09:49.507+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-couro-preto-5192100-p2780664
+[2023-11-09T18:09:51.229+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis          
+[2023-11-09T18:09:51.229+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-delta-esportivo-masculino-neon-azul-5177877-p2641477
+[2023-11-09T18:09:52.193+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:52.193+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-listra-branco-5191395-p2775888
+[2023-11-09T18:09:53.280+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:09:53.281+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-court-royale-2-casual-masculino-preto-5170542-p2580721
+[2023-11-09T18:09:54.373+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Napa            
+[2023-11-09T18:09:54.373+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-urano-esportivo-masculino-branco-5183132-p2697260
+[2023-11-09T18:09:55.326+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:09:55.327+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-perfuros-couro-cravo-marrom-5185188-p2719459
+[2023-11-09T18:09:56.294+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis            
+[2023-11-09T18:09:56.294+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-fino-off-white-5164048-p1664713
+[2023-11-09T18:09:57.321+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 6cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:09:57.321+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-taca-amarracao-pink-5171554-p2593062
+[2023-11-09T18:09:58.391+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Taça      Bico: Fino            
+[2023-11-09T18:09:58.392+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-asics-esportivo-streetwise-masculino-cinza-5184152-p2709279
+[2023-11-09T18:09:59.278+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Dia a Dia       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Mesh            
+[2023-11-09T18:09:59.278+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-saturno-esportivo-masculino-cinza-5183147-p2697459
+[2023-11-09T18:10:00.295+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo        Acabamento: Napa            
+[2023-11-09T18:10:00.296+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-urbex-esportivo-masculino-marinho-5172345-p2600522
+[2023-11-09T18:10:01.276+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:01.276+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-verde-5175691-p2622332
+[2023-11-09T18:10:02.821+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16 cm Largura: 25 cm Profundidade: 3 cm Medida da alça: 110 cm no furo do meio            
+[2023-11-09T18:10:02.822+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-beira-rio-aberto-salto-fino-elastico-preto-5181255-p2677741
+[2023-11-09T18:10:03.908+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 10 cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:10:03.908+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-preto-5173422-p2610831
+[2023-11-09T18:10:04.866+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:04.867+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-zex-esportivo-masculino-branco-5183123-p2697032
+[2023-11-09T18:10:06.127+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:06.127+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-showtheway-2-0-esportivo-masculino-marinho-5181610-p2679934
+[2023-11-09T18:10:07.082+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:07.083+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-goya-esportivo-masculino-grafite-5192606-p2783252
+[2023-11-09T18:10:08.106+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo           
+[2023-11-09T18:10:08.106+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-micangas-verde-5176962-p2630928
+[2023-11-09T18:10:08.964+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 10,5 cm  Largura: 18,5 cm  Profundidade: 6,5 cm  Medida da alça: 110 cm no furo do meio           
+[2023-11-09T18:10:08.964+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-revolution-6-next-nature-esportivo-masculino-branco-5189582-p2757915
+[2023-11-09T18:10:09.968+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo           
+[2023-11-09T18:10:09.968+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-democrata-denim-go-couro-marinho-5167466-p1711532
+[2023-11-09T18:10:10.922+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:10:10.923+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-fino-pespontos-azul-5184075-p2709971
+[2023-11-09T18:10:12.124+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:10:12.124+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizado-verde-5172413-p2600916
+[2023-11-09T18:10:13.074+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16,5 cm  Largura: 10 cm  Profundidade: 3,5 cm  Medidas da alça: 110 cm no furo do meio            
+[2023-11-09T18:10:13.074+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-galaxy-5-esportivo-masculino-preto-5173623-p2612636
+[2023-11-09T18:10:13.987+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:13.987+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-couro-marrom-5192101-p2780665
+[2023-11-09T18:10:15.001+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis          
+[2023-11-09T18:10:15.002+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-mac-jac-detalhe-recortes-camurca-preto-5191431-p2776338
+[2023-11-09T18:10:15.951+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Camurça          
+[2023-11-09T18:10:15.951+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-pegada-premium-dune-couro-preto-5184067-p2708164
+[2023-11-09T18:10:16.912+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Couro       Ocasião de Uso: Dia a Dia      Modelo: Linha Premium          
+[2023-11-09T18:10:16.912+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-latin-run-u-esportivo-masculino-grafite-5189706-p2759134
+[2023-11-09T18:10:17.826+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:17.826+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-grosso-amarracao-strass-preto-5182960-p2694561
+[2023-11-09T18:10:18.671+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 5cm      Tipo de Salto: Grosso      Bico: Fino            
+[2023-11-09T18:10:18.671+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-wave-mirai-4-esportivo-masculino-knit-marinho-5178138-p2645569
+[2023-11-09T18:10:20.028+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo        Acabamento: Knit            
+[2023-11-09T18:10:20.029+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-adidas-vulc-raid3r-street-masculino-tecido-preto-5189810-p2759572
+[2023-11-09T18:10:21.164+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Lona       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual            
+[2023-11-09T18:10:21.164+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-proof-2-esportivo-masculino-preto-5163169-p1657759
+[2023-11-09T18:10:22.109+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:22.110+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-listra-nobuck-off-white-5188293-p2745658
+[2023-11-09T18:10:22.993+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Modelo: Sapatênis       Acabamento: Nobuck          
+[2023-11-09T18:10:22.993+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-iceberg-casual-texturizado-marrom-5169747-p1892908
+[2023-11-09T18:10:24.042+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Tênis Casual       Acabamento: Napa            
+[2023-11-09T18:10:24.042+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-germany-pespontos-azul-5188067-p2742755
+[2023-11-09T18:10:25.186+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa            
+[2023-11-09T18:10:25.186+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sapatenis-woche-detalhes-texturizados-preto-5192477-p2782471
+[2023-11-09T18:10:26.162+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sapatênis       Acabamento: Napa          
+[2023-11-09T18:10:26.162+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/sandalia-mac-jac-tiras-fivela-marrom-5183545-p2703041
+[2023-11-09T18:10:27.107+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Sandália       Acabamento: Napa            
+[2023-11-09T18:10:27.107+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-downshifter-12-esportivo-masculino-preto-5183393-p2701478
+[2023-11-09T18:10:28.160+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:28.161+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-tiras-tresse-metalizado-color-5170504-p2580532
+[2023-11-09T18:10:29.172+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Metalizado       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:10:29.172+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-bloco-decote-fivela-preto-5188392-p2746424
+[2023-11-09T18:10:30.102+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 6cm      Tipo de Salto: Bloco      Bico: Quadrado          
+[2023-11-09T18:10:30.102+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-asics-raiden-3-esportivo-masculino-grafite-5179292-p2660423
+[2023-11-09T18:10:31.007+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:31.007+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-liberte-detalhe-tiras-verde-5166882-p1690019
+[2023-11-09T18:10:32.053+0000] {logger.py:18} INFO -       Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:10:32.053+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-tiras-tresse-metalizado-caramelo-5166940-p1690072
+[2023-11-09T18:10:33.149+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Metalizado       Acabamento: Napa      Bico: Redondo            
+[2023-11-09T18:10:33.149+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-metalizado-caramelo-5170531-p2580710
+[2023-11-09T18:10:34.104+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Rasteira       Acabamento: Metalizado       Acabamento: Napa      Bico: Quadrado            
+[2023-11-09T18:10:34.104+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-salto-fino-detalhe-pespontos-verde-5172803-p2603726
+[2023-11-09T18:10:35.368+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9cm      Tipo de Salto: Fino      Bico: Fino            
+[2023-11-09T18:10:35.368+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-nike-legend-essential-2-esportivo-masculino-azul-5178103-p2645056
+[2023-11-09T18:10:36.479+0000] {logger.py:18} INFO -       Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:36.479+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-olympikus-marte-esportivo-masculino-cinza-5187842-p2740552
+[2023-11-09T18:10:37.556+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Tecido      Material: Sintético       Ocasião de Uso: Academia      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:37.556+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-azul-5176913-p2630920
+[2023-11-09T18:10:38.716+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16 cm Largura: 25 cm Profundidade: 03 cm Medida da alça: 110 cm no furo do meio            
+[2023-11-09T18:10:38.716+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/tenis-mizuno-wave-vitality-4-esportivo-masculino-preto-5178139-p2645570
+[2023-11-09T18:10:39.703+0000] {logger.py:18} INFO -         Genero: Masculino         Setor: Adulto      Material: Sintético      Material: Tecido       Ocasião de Uso: Corrida      Modelo: Tênis Esportivo             
+[2023-11-09T18:10:39.704+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-recortes-nude-5176782-p2629762
+[2023-11-09T18:10:40.713+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Scarpin       Acabamento: Napa       Altura do Salto: 9 cm      Bico: Fino            
+[2023-11-09T18:10:40.713+0000] {logger.py:18} INFO - requesting url: https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-envelope-detalhe-corrente-caramelo-5170098-p2417554
+[2023-11-09T18:10:41.753+0000] {logger.py:18} INFO -         Genero: Feminino         Setor: Adulto      Material: Sintético       Ocasião de Uso: Dia a Dia      Modelo: Bolsa       Acabamento: Napa      Medidas da peça: Altura: 16,5 cm  Largura: 24,5 cm  Profundidade: 2,5 cm  Medida da alça: 110cm no furo do meio      Compartimentos internos: Um bolso            
+[2023-11-09T18:10:41.821+0000] {logger.py:18} INFO - dataframe with specifications:                                              title  ...                                              specs
+0    Bolsa Tiracolo Pequena Gabriela Essenciais...  ...          Genero: Feminino         Setor: Adulto...
+1    Bolsa Tiracolo Pequena STZ Corrente Textur...  ...          Genero: Feminino         Setor: Adulto...
+2    Bolsa Tiracolo Pequena Gabriela Essenciais...  ...        Genero: Feminino         Setor: Adulto  ...
+3    Bolsa Tiracolo Pequena Gabriela Tacha Text...  ...        Genero: Feminino         Setor: Adulto  ...
+4    Bolsa Tiracolo Pequena Gabriela Essenciais...  ...          Genero: Feminino         Setor: Adulto...
+..                                             ...  ...                                                ...
+526  Tênis Olympikus Volcan Esportivo Masculino...  ...          Genero: Masculino         Setor: Adult...
+527  Tênis Olympikus Proof 3 Esportivo Masculin...  ...          Genero: Masculino         Setor: Adult...
+528  Tênis Olympikus Soma Esportivo Masculino K...  ...          Genero: Masculino         Setor: Adult...
+529  Tênis Olympikus Soma Esportivo Masculino M...  ...          Genero: Masculino         Setor: Adult...
+530  Tênis Olympikus Soma Esportivo Masculino K...  ...          Genero: Masculino         Setor: Adult...
+
+[531 rows x 7 columns]
+[2023-11-09T18:10:41.824+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-09T18:10:41.829+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=query_scraper, task_id=collect_items_specifications, execution_date=20231109T171926, start_date=20231109T180547, end_date=20231109T181041
+[2023-11-09T18:10:41.847+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-09T18:10:41.863+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

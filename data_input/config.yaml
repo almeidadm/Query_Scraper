@@ -1,0 +1,8 @@
+name: "STZ"
+domain: "https://www.stz.com.br"
+search_url: "https://www.stz.com.br/pesquisa?t={query}&o=ascPrice"
+element_selector: ""
+title_selector: ".name"
+price_selector: ".price-sale"
+url_selector: ".preview-product div div a"
+specs_selector: "#panel-specs-collapseTwo"

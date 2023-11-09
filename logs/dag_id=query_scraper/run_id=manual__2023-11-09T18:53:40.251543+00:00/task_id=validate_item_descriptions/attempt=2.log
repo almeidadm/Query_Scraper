@@ -1,0 +1,1334 @@
+[2023-11-09T19:46:01.358+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: query_scraper.validate_item_descriptions manual__2023-11-09T18:53:40.251543+00:00 [queued]>
+[2023-11-09T19:46:01.363+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: query_scraper.validate_item_descriptions manual__2023-11-09T18:53:40.251543+00:00 [queued]>
+[2023-11-09T19:46:01.364+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-11-09T19:46:01.379+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): validate_item_descriptions> on 2023-11-09 18:53:40.251543+00:00
+[2023-11-09T19:46:01.383+0000] {standard_task_runner.py:57} INFO - Started process 3200 to run task
+[2023-11-09T19:46:01.386+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'query_scraper', 'validate_item_descriptions', 'manual__2023-11-09T18:53:40.251543+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/dag_definitions.py', '--cfg-path', '/tmp/tmpc2gmltq_']
+[2023-11-09T19:46:01.387+0000] {standard_task_runner.py:85} INFO - Job 47: Subtask validate_item_descriptions
+[2023-11-09T19:46:01.414+0000] {task_command.py:415} INFO - Running <TaskInstance: query_scraper.validate_item_descriptions manual__2023-11-09T18:53:40.251543+00:00 [running]> on host a23ad50e55eb
+[2023-11-09T19:46:01.457+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='query_scraper' AIRFLOW_CTX_TASK_ID='validate_item_descriptions' AIRFLOW_CTX_EXECUTION_DATE='2023-11-09T18:53:40.251543+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-09T18:53:40.251543+00:00'
+[2023-11-09T19:46:01.499+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-vinho-5155195-p1151165
+[2023-11-09T19:46:01.499+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.499+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', '17', 'ESSENCIAIS...', '03', '26', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-stz-corrente-texturizada-bege-5182130-p2686465
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'DE', '19', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', '3,5', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', '11', 'DIA', 'MODELO', 'CM'}
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-azul-5176913-p2630920
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', 'ESSENCIAIS...', '03', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', '16', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.500+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-tacha-texturizada-laranja-5163044-p1656990
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', 'DE', 'MEIO', 'ESSENCIAIS...', 'MEDIDAS', '19,2', 'DA', 'ADULTO', '10', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', '01', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'BOLSO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'UM', 'CM'}
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-coral-5176912-p2630919
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', 'TEXTURIZADO', '03', 'MEDIDAS', 'DA', 'ADULTO', '...', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', '16', 'MODELO', 'FURO', 'PAGANI', 'CM'}
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.501+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-ziper-amarelo-5161372-p1637831
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'TEXTURIZAD...', 'DE', 'MEIO', '17', '03', '26', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-verde-5175691-p2622332
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', '3', 'ALCA', 'DE', 'MEIO', 'BARBI...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'LOGO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', '16', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.502+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-media-gabriela-texturizada-rosa-5149353-p163495
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', 'ESSENCIAIS...', '03', 'MEDIDAS', '15', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-pagani-texturizado-vermelho-5159747-p1616158
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', '17', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizado-verde-5172413-p2600916
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.503+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', '16,5', 'TEXTURIZAD...', 'DE', 'MEIO', 'MEDIDAS', 'DA', 'ADULTO', '10', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'TECIDO', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', '3,5', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-off-white-5183139-p2700656
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', '11,5CM', 'DE', '20,5CM', 'MEIO', '5,5CM', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', '...', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'BOLSO', 'PESPONTOS', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'UM', 'CM'}
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-azul-5185719-p2724468
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'DE', 'MEDIDAS', 'DA', 'ADULTO', '24,5CM', 'GABRIELA', '...', 'OCASIAO', 'PEQUENA', 'USO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'PESPONTOS', '02CM', '16CM', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.504+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-logo-barbicacho-pink-5189463-p2757197
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - Desc set {'19CM;', 'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', 'DE', 'MEIO', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', '13CM;', 'A', 'GENERO', 'BOLSO', 'SETOR', 'NAPA', 'PROFUNDIDADE', '6,5CM;', 'DO', 'DIA', '110CM', 'MODELO', 'FURO', 'UM'}
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-meia-lua-laranja-5176911-p2630918
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'MEDIA', 'COMPARTIMENTOS', 'ALCA', 'DE', 'MEIO', 'MEDIDAS', 'DA', 'ADULTO', 'DETALHE', 'GABRIELA', 'OCASIAO', 'USO', '22CM;', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', '15,5CM;', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'BOLSO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', 'FIVE...', 'DIA', '110CM', 'MODELO', '7,5CM;', 'FURO', 'UM'}
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.505+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5149350-p163491
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', 'ESSENCIAIS...', '03', 'MEDIDAS', '15', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-azul-5157744-p1179332
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'MASCULINO', 'DE', 'MEIO', '03', 'MEDIDAS', '15', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'REDONDA', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-caramelo-5149352-p163484
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', '03', 'MEDIDAS', '15', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'T...', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CORRENTE', 'CM'}
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.506+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-micangas-verde-5176962-p2630928
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', '6,5', 'ALCA', '18,5', 'DE', 'MEIO', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', '10,5', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-texturizada-preto-5163395-p1659093
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - Desc set {'05', 'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', '16', '21', 'M...', 'MODELO', 'FURO', 'CORRENTE', 'CM'}
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-envelope-detalhe-corrente-caramelo-5170098-p2417554
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.507+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', '16,5', 'DE', 'MEIO', 'LARGA...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'BOLSO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', 'DIA', '110CM', 'MODELO', '24,5', 'FURO', '2,5', 'UM', 'CM'}
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-texturizado-verde-5163551-p1659928
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', '15,5', 'DE', 'MEIO', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', '17,5', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'BOLSO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', '07', 'UM', 'CM'}
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-drapeada-verde-5157875-p1179434
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', 'DE', 'MEIO', '14', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', '5', 'TIRACOLO', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'BOLSO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'UM', '21CM', 'CM'}
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.508+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-pespontos-geometrico-amarelo-5163560-p1659946
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', '6,5', 'COMPARTIMENTOS', 'ALCA', 'DE', '20', 'MEIO', 'ESSENCIAIS...', 'BOLSOS', 'MEDIDAS', 'DOIS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', '13,5', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizado-nude-5171138-p2587636
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', 'MEIO', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', '24', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', '04', 'DO', '110', 'DIA', '16', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-preto-5175690-p2622331
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.509+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', '3', 'ALCA', 'DE', 'MEIO', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', '25', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', '16', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-lilas-5176908-p2630915
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', 'DE', 'MEIO', '17', 'BOLSOS', '12,5', 'MEDIDAS', 'DA', 'ADULTO', '26,5', 'DETALHE', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TRES', 'TIRACOLO', 'FEMININO', 'SINTETICO', 'NO...', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-media-gabriela-detalhe-fivela-verde-5179707-p2664371
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'COMPARTIMENTOS', 'ALCA', 'DE', 'MEIO', '17', 'ESSENCIAIS...', 'BOLSOS', '12,5', 'MEDIDAS', 'DA', 'ADULTO', '26,5', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TRES', 'TIRACOLO', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.510+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-gabriela-detalhe-em-recortes-verde-5157853-p1179388
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'ALCA', 'DE', '20', 'MEIO', 'ESSENCIAIS...', 'MEDIDAS', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', '5,5', 'NO', '13', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', '110', 'DIA', 'MODELO', 'FURO', 'CM'}
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-pequena-gabriela-essenciais-texturizada-amarelo-5161374-p1637833
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', 'MEDIA', 'COMPARTIMENTOS', 'ALCA', 'DE', 'MEIO', 'MEDIDAS', '15', 'DA', 'ADULTO', 'DETALHE', 'GABRIELA', 'OCASIAO', 'USO', '21,5', 'NO', 'PECA', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'MEDIDA', 'FEMININO', 'SINTETICO', 'INTERNOS', 'LARGURA', 'A', 'GENERO', 'BOLSO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DO', 'FIVE...', '110', 'DIA', 'MODELO', 'FURO', '07', 'UM', 'CM'}
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - URL https://www.stz.com.br/bolsa-tiracolo-gabriela-texturizada-azul-5157743-p1179328
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - Query set {'TIRACOLO', 'NAPA', 'BOLSA', 'FEMININO'}
+[2023-11-09T19:46:01.511+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BOLSA', '6,5', 'ALCA', 'DE', 'LARGA...', 'MEDIDAS', '15', 'DA', 'ADULTO', 'GABRIELA', 'OCASIAO', 'PEQUENA', 'USO', 'PECA', '22', 'ALTURA', 'MATERIAL', 'TIRACOLO', 'FEMININO', 'SINTETICO', 'LARGURA', 'A', 'GENERO', 'SETOR', 'NAPA', 'PROFUNDIDADE', 'DIA', 'MODELO', 'CM'}
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-pespontos-couro-marrom-5183473-p2702196
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - Query set {'COURO', 'ADULTO', 'MASCULINO', 'SANDALIA'}
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - Desc set {'JAC', 'MARROM', 'MATERIAL', '&', 'MAC', 'DIA', 'MASCULINO', 'ADULTO', 'COURO', 'MODELO', 'OCASIAO', 'DE', 'SANDALIA', 'GENERO', 'USO', 'PESPONTOS', 'A', 'SETOR'}
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-pegada-perfuros-ilhos-couro-marrom-5179557-p2663294
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - Query set {'COURO', 'ADULTO', 'MASCULINO', 'SANDALIA'}
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - Desc set {'MARROM', 'MATERIAL', 'DIA', 'MASCULINO', 'ADULTO', 'COURO', 'MODELO', 'TIRAS', 'OCASIAO', 'DE', 'SANDALIA', 'GENERO', 'USO', 'PESPONTOS', 'A', 'SETOR', 'PEGADA'}
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.512+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5169466-p1889884
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - Query set {'COURO', 'ADULTO', 'MASCULINO', 'SANDALIA'}
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - Desc set {'MARROM', 'MATERIAL', 'DIA', 'MASCULINO', 'ADULTO', 'COURO', 'MODELO', 'TIRAS', 'OCASIAO', 'DE', 'SANDALIA', 'GENERO', 'USO', 'PESPONTOS', 'A', 'SETOR', 'PEGADA'}
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-pegada-anilina-perfuros-couro-marrom-5177388-p2636311
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - Query set {'COURO', 'ADULTO', 'MASCULINO', 'SANDALIA'}
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'ADULTO', 'COURO', 'MODELO', 'OCASIAO', 'DE', 'SANDALIA', 'GENERO', 'PEGADA', 'PESPONTOS', 'USO', 'A', 'SETOR', 'ANILINA'}
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-pegada-tiras-pespontos-couro-marrom-5126476-p69332
+[2023-11-09T19:46:01.513+0000] {logger.py:18} INFO - Query set {'COURO', 'ADULTO', 'MASCULINO', 'SANDALIA'}
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - Desc set {'MARROM', 'MATERIAL', 'DIA', 'MASCULINO', 'ADULTO', 'COURO', 'DETALHE', 'PERFUROS', 'OCASIAO', 'DE', 'SANDALIA', 'GENERO', 'USO', 'A', 'MODELO', 'SETOR', 'PEGADA'}
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-tiras-hotfix-amarelo-5166770-p1689903
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'LIBERTE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'AMARELO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'HOTFIX', 'SANDALIA'}
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-tiras-pink-5180754-p2673094
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'LIBERTE', 'ADULTO', 'DETALHE', 'OCASIAO', 'PEDRARIA', 'USO', 'REDONDO', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'AMARELO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.514+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-pedraria-amarelo-5169097-p1882100
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - Desc set {'VERDE', 'ACABAMENTO', 'DE', 'LIBERTE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-tresse-laranja-5169757-p1893110
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'METALIZADO', 'DE', 'LIBERTE', 'TRESSE', 'C...', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-tiras-verde-5166882-p1690019
+[2023-11-09T19:46:01.515+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'LIBERTE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'NO', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'AMARELO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-roxo-5175684-p2622172
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'PEDRARIA', 'USO', 'PENELOPE', 'PINK', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-tiras-tresse-metalizado-color-5170504-p2580532
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'METALIZADO', 'DE', 'LIBERTE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'STRASS', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'AMARELO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.516+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-tiras-amarelo-5166931-p1690063
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'LIBERTE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'STRASS', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'AMARELO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-no-amarelo-5164289-p1667692
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - Desc set {'VERDE', 'ACABAMENTO', 'CRUZADAS', 'DE', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'MIL...', 'DIA', 'SANDALIA'}
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.517+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-aplicacao-verde-5173299-p2609402
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'CRUZADAS', 'DE', 'NUDE', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-tiras-pedraria-pink-5175625-p2621619
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'BRANCO', 'DE', 'TRESSE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-tiras-cruzadas-verde-5168153-p1721773
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'CRUZADAS', 'DE', 'NUDE', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.518+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-strass-tiras-amarelo-5165570-p1683154
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'LIBERTE', 'ADULTO', 'APLICACA...', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-tiras-off-white-5166862-p1689998
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'TRESSE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'MET...', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.519+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-strass-amarelo-5166870-p1690007
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'CRUZADAS', 'DE', 'ADULTO', 'TIRAS', 'CORAL', 'OCASIAO', 'USO', 'REDONDO', 'NO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-tresse-metalizada-rosa-5164187-p1667191
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'METALIZADO', 'DE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'H...', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-verde-militar-5183207-p2698587
+[2023-11-09T19:46:01.520+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'CRUZADAS', 'DE', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'PENELOPE', 'PINK', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-tresse-metalizado-caramelo-5166940-p1690072
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'METALIZADO', 'CRUZADAS', 'DE', 'C...', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'TEXTURA', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-nude-5182854-p2693478
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - Desc set {'VERDE', 'ACABAMENTO', 'DE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.521+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-tiras-tresse-preto-5166731-p1689867
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - Desc set {'FOLHA', 'ACABAMENTO', 'ESSENCIAIS', 'DE', 'ADULTO', 'GABRIELA', 'OCASIAO', 'USO', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA', 'PESP...'}
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-branco-5170522-p2580577
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'CRUZADAS', 'DE', 'ADULTO', 'AZUL', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.522+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-rasteira-liberte-tira-tresse-caramelo-5169364-p1888342
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'NUDE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-nude-5183208-p2698588
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'AMARRACAO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TACHA...', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-liberte-detalhe-vazados-amarelo-5170378-p2578709
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - Desc set {'VERDE', 'ACABAMENTO', 'CRUZADAS', 'DE', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'PENELOPE', 'STRASS', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.523+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-rasteira-liberte-detalhe-aplicacao-branco-5168156-p1722058
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'CRUZADAS', 'DE', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'PENELOPE', 'STRASS', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'OF...', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-tiras-amarelo-5180755-p2673095
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'COLOR', 'DE', 'TRESSE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.524+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-detalhe-tiras-tresse-metalizado-caramelo-5170531-p2580710
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'PESPO...', 'AMARRACAO', 'METALIZADO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-strass-off-white-5181094-p2675449
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'CRUZADAS', 'DE', 'C...', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-no-coral-5183206-p2698586
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'AMARRACAO', 'DE', 'APLIC...', 'ADULTO', 'OCASIAO', 'USO', 'REDONDO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.525+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - URL https://www.stz.com.br/rasteira-penelope-tiras-cruzadas-azul-5182864-p2693720
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - Query set {'NAPA', 'ADULTO', 'FEMININO', 'SANDALIA'}
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'PRETO', 'PENELOPE', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-tiras-largas-fivelas-camurca-bege-5187753-p2739869
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SANDALIA', 'CAMURCA'}
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - Desc set {'JAC', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'DE', 'LARGAS', 'FIVELAS', 'CAMURCA', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'REDONDO', 'MATERIAL', 'CA...', 'SINTETICO', 'BICO', 'A', 'GENERO', 'SETOR', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.526+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-flatform-fivela-camurca-caramelo-5176024-p2626608
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SANDALIA', 'CAMURCA'}
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - Desc set {'JAC', 'VERDE', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'DE', 'CAMURCA', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'DIA', 'MODELO', 'SANDALIA', 'FIVELA'}
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-tiras-fivela-camurca-verde-5183640-p2702983
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SANDALIA', 'CAMURCA'}
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - Desc set {'JAC', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'DE', 'LARGAS', 'FIVELAS', 'CAMURCA', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'MATERIAL', 'CA...', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-flatform-fivelas-camurca-bege-5183628-p2702981
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SANDALIA', 'CAMURCA'}
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - Desc set {'JAC', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'DE', 'CAMURCA', 'ADULTO', 'DETALHE', 'OCASIAO', 'FIVELA...', 'USO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'FLATFORM', 'DIA', 'MODELO', 'SANDALIA'}
+[2023-11-09T19:46:01.527+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-tiras-detalhe-elos-preto-5183645-p2703046
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NAPA', 'SANDALIA'}
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - Desc set {'JAC', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'TIRAS', 'OCASIAO', 'USO', 'PRETO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA', 'ELOS'}
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-tiras-fivela-preto-5183641-p2703042
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NAPA', 'SANDALIA'}
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - Desc set {'JAC', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'DE', 'ADULTO', 'TIRAS', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'SANDALIA', 'FIVELA'}
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.528+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sandalia-mac-jac-tiras-fivela-marrom-5183545-p2703041
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NAPA', 'SANDALIA'}
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'VI', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SANTORINI', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'MODELO', 'CARTAGO', 'SANDALIA'}
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-couro-preto-5171452-p2592286
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'DETALHE', 'PERFUROS', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'PRETO', 'MODELO', 'SETOR', 'WOCHE'}
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-couro-preto-5177536-p2636098
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.529+0000] {logger.py:18} INFO - Desc set {'JAC', '&', 'MAC', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'REDONDO', 'MATERIAL', 'SAPATENIS', 'BICO', 'A', 'GENERO', 'SETOR', 'RECORTES', 'COURO...', 'DIA', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-mac-jac-detalhe-recortes-couro-branco-5169605-p1891209
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'COURO', 'NOBUCK', 'DETALHE', 'PERFUROS', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'MODELO', 'SETOR', 'WOCHE'}
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-caramelo-5178704-p2654492
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'PRETO', 'PREMIUM', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'PEGADA', 'DIA', 'FLIGHT', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.530+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-marinho-5178799-p2654495
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - Desc set {'JAC', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'CAMUR...', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'RECORTES', 'DIA', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-mac-jac-recortes-couro-marrom-5167033-p1690165
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'PRETO', 'ADULTO', 'DETALHE', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'PESPONTOS', 'SETOR', 'WOCHE'}
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-premium-flight-couro-preto-5184070-p2708167
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.531+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'LEXUS', 'SETOR', 'FERRACINI', 'PRETO'}
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-mac-jac-detalhe-recortes-camurca-branco-5191433-p2776340
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'WASHED', 'DE', 'CAMURCA', 'ADULTO', 'OCASIAO', 'USO', 'ZIPER', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'PEGADA', 'COU...', 'DIA', 'COURO', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-mac-jac-detalhe-recortes-camurca-preto-5191431-p2776338
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DEMOCRATA', 'MASCULINO', 'DE', 'TEXTURIZADO', 'CAMURCA', 'ADULTO', 'OCASIAO', 'USO', 'LOOP', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'COURO...', 'DIA', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.532+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-couro-marrom-5192101-p2780665
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'C...', 'DEMOCRATA', 'DENIM', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'COURO', 'DIA', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'LUKE', 'SETOR'}
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-couro-preto-5192100-p2780664
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'COURO', 'STRETCH', 'PERFUROS...', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'SETOR', 'PEGADA', 'ELASTICO'}
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-premium-dune-couro-preto-5184067-p2708164
+[2023-11-09T19:46:01.533+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - Desc set {'MARINHO', 'LISTRAS', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'PREMIUM', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'PEGADA', 'DIA', 'LINHA', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapato-social-ferracini-lexus-couro-preto-5158711-p1188772
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'OIL', 'CINZA', 'DIA', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'COURO', 'NOBUCK', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'TEXTURIZADO', 'PEGADA', 'SETOR'}
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-casual-wear-elastico-couro-marinho-5191925-p2779897
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MILK', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'MODELO', 'PERFUROS', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'OFF', 'W...', 'PEGADA', 'SETOR'}
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.534+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-washed-ziper-perfuros-couro-caramelo-5184495-p2713401
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - Desc set {'DEMOCRATA', 'MASCULINO', 'DE', 'ALTO', 'C...', 'DENIM', 'ADULTO', 'OCASIAO', 'CANO', 'USO', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'CITY', 'DIA', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-democrata-denim-go-couro-marinho-5167466-p1711532
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DEMOCRATA', 'MASCULINO', 'DE', 'SHIFT', 'DENIM', 'ADULTO', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-democrata-loop-texturizado-couro-off-white-5179513-p2662930
+[2023-11-09T19:46:01.535+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'SHIFT', 'DEMOCRATA', 'DENIM', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'DIA', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'PRETO', 'SETOR'}
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-washed-ziper-perfuros-couro-marrom-5184494-p2713400
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'RECORTES', 'DEMOCRATA', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'CA...', 'ADULTO', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'SETOR', 'CITY'}
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-democrata-denim-luke-masculino-camurca-preto-5188147-p2744136
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DEMOCRATA', 'MASCULINO', 'DE', 'CAMURCA', 'ADULTO', 'OCASIAO', 'USO', 'PRETO', 'SOCIAL', 'MATERIAL', 'SAPATENIS', 'ASPEN', 'GENERO', 'A', 'SETOR', 'DIA', 'COURO', 'MODELO'}
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.536+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-parafinado-nobuck-marrom-5188306-p2746163
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DEMOCRATA', 'MASCULINO', 'NOBUCK', 'DE', 'DENIM', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'N...', 'SETOR', 'DIA', 'COURO', 'MODELO', 'LUKE'}
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-stretch-elastico-perfuros-couro-preto-5191938-p2779888
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - Desc set {'MARROM', 'MATERIAL', 'DEMOCRATA', 'DENIM', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'DIA', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'RAVE', 'TECIDO', 'USO', 'A', 'SETOR'}
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.537+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-ferracini-lexus-pespontos-couro-preto-5184293-p2710816
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'PESPONTOS', 'MODELO', '...', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'LEXUS', 'SETOR', 'FERRACINI'}
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-listras-nobuck-marinho-5188307-p2746164
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - Desc set {'MARROM', 'MATERIAL', 'ACABAMENTO', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'NOBUCK', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'LEXUS', 'SETOR', 'FERRACINI'}
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-ferracini-recortes-couro-preto-5169776-p1893208
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'COURO', 'WASHED', 'MODELO', '...', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'ZIPER', 'TEXTURIZADO', 'PEGADA', 'SETOR'}
+[2023-11-09T19:46:01.538+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-nobuck-oil-texturizado-cinza-5188334-p2746166
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'C...', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'DIA', 'COURO', 'MODELO', 'PERFUROS', 'STAR', 'FERRACINI'}
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-democrata-denim-go-couro-marrom-5167467-p1711533
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'SAPATENIS', 'COURO', 'ADULTO', 'M...', 'MODELO', 'PERFUROS', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'LEXUS', 'SETOR', 'FERRACINI'}
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.539+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-perfuros-couro-milk-off-white-5185189-p2719460
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'ZIPER', 'CO...', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'DIA', 'COURO', 'MODELO', 'FERRACINI', 'BLEND'}
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-pegada-perfuros-couro-cravo-marrom-5185188-p2719459
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'SAPATENIS', 'COURO'}
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'JOURNEY', 'EXTRASOF...', 'DEMOCRATA', 'DENIM', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'SINTETICO', 'COURO', 'DIA', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'SETOR'}
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-listras-recortes-tecido-branco-5187908-p2741447
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.540+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'BR...', 'RECORTES', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-mac-jac-recortes-tecido-marinho-5164980-p1677009
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - Desc set {'JAC', '&', 'MAC', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'CARAMELO', 'SETOR', 'NAPA', 'RECORTES', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-mac-jac-recortes-tecido-caramelo-5164985-p1677014
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'RECORTES', 'ACABAMENTO', 'DIA', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'DETALHE', 'MODELO', 'OCASIAO', 'DE', 'TECIDO', 'GENERO', 'USO', 'A', 'SETOR', 'NAPA', 'WOCHE'}
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.541+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-iceberg-casual-texturizado-marrom-5169747-p1892908
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'TEXTURIZADO', 'ICEBERG', 'ADULTO', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - Difference {'SAPATENIS'}
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - INVALID ITEM
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-iceberg-casual-detalhe-pespontos-marrom-5167400-p1711457
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'BR...', 'RECORTES', 'DIA', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-perfuros-listras-marinho-5171456-p2592797
+[2023-11-09T19:46:01.542+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ACABAMENTO', 'DIA', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'PESPONTOS', 'CARAMELO', 'SETOR', 'NAPA', 'WOCHE'}
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-recortes-jeans-marinho-5175639-p2625094
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ICEBERG', 'ADULTO', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SAPATENIS', 'JEANS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'RECORTES', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-pespontos-perfuros-marrom-5181651-p2680494
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.543+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-pespontos-pespontos-caramelo-5177832-p2641214
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'METALIZADO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'TEXTURI...', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-iceberg-recortes-perfuros-marrom-5167399-p1711456
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-listras-recortes-tecido-marinho-5187906-p2741445
+[2023-11-09T19:46:01.544+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SAPATENIS', 'CA...', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'RECORTES', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-preto-5189796-p2759617
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'LISTRA', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-texturizado-caramelo-5192484-p2782475
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', '...', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'RECORTES', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.545+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-metalizado-texturizado-marinho-5192485-p2782476
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhes-texturizados-preto-5192477-p2782471
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MARINHO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-recortes-off-white-5171520-p2592420
+[2023-11-09T19:46:01.546+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-recortes-preto-5175942-p2625096
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'TECIDO', 'MARROM', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-pespontos-perfuros-preto-5181650-p2680493
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'LISTRA', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'CINZA', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.547+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-germany-pespontos-azul-5188067-p2742755
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'CINZA', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-listras-recortes-tecido-caramelo-5187907-p2741446
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'TECIDO', 'MARROM', 'MATERIAL', 'SAPATENIS', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-caramelo-5191396-p2775889
+[2023-11-09T19:46:01.548+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'TEXTURIZAD...', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-listra-preto-5191284-p2775882
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-listra-branco-5191395-p2775888
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'POLO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'CINZA', 'SAPATENIS', 'SINTETICO', 'ENERGY', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.549+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-recortes-perfuros-cinza-5175943-p2625097
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'M...', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-pespontos-preto-5183828-p2704999
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', '...', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'RECORTES', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-preto-5176597-p2628839
+[2023-11-09T19:46:01.550+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MARROM', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-grafite-5179358-p2662201
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MARINHO', 'MASCULINO', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-marinho-5183827-p2704957
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - Desc set {'GERMANY', 'ACABAMENTO', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.551+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-polo-energy-pespontos-caramelo-5180287-p2670212
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - Desc set {'JAC', 'ACABAMENTO', '&', 'MAC', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'RECORTES', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-marrom-5179247-p2662104
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'WHITE', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'OFF', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.552+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-pespontos-recortes-branco-5180256-p2670210
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - Query set {'ADULTO', 'NAPA', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'LISTRAS', 'MASCULINO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'WOCHE', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-legacy-perfuros-nobuck-preto-5182281-p2688258
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'LEGACY', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-legacy-perfuros-nobuck-bege-5182296-p2688260
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'LEGACY', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'DIA', 'MODELO', 'OLLIE'}
+[2023-11-09T19:46:01.553+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-ollie-legacy-pespontos-nobuck-preto-5164711-p1673055
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MARINHO', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'JEANS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'WOCHE', 'RECORTES', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-marinho-5188268-p2745649
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'LISTRA', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'NO...', 'A', 'GENERO', 'SETOR', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.554+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-recortes-nobuck-jeans-marinho-5182297-p2688316
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SAPATENIS', 'JEANS', 'A', 'GENERO', 'SETOR', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-syerra-recortes-jeans-nobuck-preto-5182295-p2688259
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'CA...', 'JEANS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-listra-nobuck-off-white-5188293-p2745658
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - Desc set {'RECORTES', 'ACABAMENTO', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'NOBUCK', 'DETALHE', 'MODELO', 'GENERO', 'PRETO', 'OLLIE', 'SETOR'}
+[2023-11-09T19:46:01.555+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-germany-pespontos-nobuck-cinza-5188302-p2745933
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'LISTRA', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'NO...', 'A', 'GENERO', 'SETOR', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-perfuros-nobuck-marrom-5187713-p2739271
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ACABAMENTO', 'DIA', 'MASCULINO', 'SAPATENIS', 'ADULTO', 'SINTETICO', 'NOBUCK', 'DETALHE', 'PERFUROS', 'OCASIAO', 'DE', 'GENERO', 'USO', 'A', 'MODELO', 'SETOR', 'WOCHE'}
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.556+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-woche-detalhe-recortes-nobuck-preto-5187637-p2739260
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'NOBUCK', 'DE', 'ADULTO', 'DETALHE', 'OCASIAO', 'USO', 'TECIDO', 'PRETO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'WOCHE', 'DIA', 'MODELO', 'PERFUROS'}
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - URL https://www.stz.com.br/sapatenis-ollie-detalhe-recortes-nobuck-preto-5164220-p1666603
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - Query set {'NOBUCK', 'ADULTO', 'MASCULINO', 'SAPATENIS'}
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DEMOCRATA', 'MASCULINO', 'NOBUCK', 'DE', 'DENIM', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'SAPATENIS', 'SINTETICO', 'A', 'GENERO', 'N...', 'SETOR', 'DIA', 'MODELO', 'LUKE'}
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-moleca-anabela-detalhe-pespontos-coral-5193611-p2788923
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MOLECA', 'DE', 'TIPO', 'ANABELA', 'C...', 'ADULTO', 'SCARPIN', 'DETALHE', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', '2,5CM'}
+[2023-11-09T19:46:01.557+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-moleca-anabela-detalhe-pespontos-nude-5193593-p2788894
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MOLECA', 'DE', 'TIPO', 'ANABELA', 'ADULTO', 'SCARPIN', 'DETALHE', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'P...', 'MODELO', '2,5CM'}
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-moleca-anabela-detalhe-pespontos-preto-5193594-p2788920
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'ABERTO', 'TIPO', 'ANABELA', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'RECORTE...', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', '2,5CM'}
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.558+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-fino-off-white-5164048-p1664713
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'TIPO', 'ADULTO', 'SCARPIN', 'AZUL', 'GABRIELA', 'OCASIAO', 'USO', '6CM', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-recortes-nude-5176782-p2629762
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - Desc set {'AMARR...', 'ACABAMENTO', 'DE', 'ABERTO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', '9', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', 'CM', 'GROSSO'}
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-beira-rio-aberto-salto-fino-elastico-preto-5181255-p2677741
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'ABERTO', 'TIPO', 'ELASTI...', 'ADULTO', 'SCARPIN', '10', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'RIO', 'DO', 'SALTO', 'DIA', 'MODELO', 'BEIRA', 'CM'}
+[2023-11-09T19:46:01.559+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-fino-pespontos-azul-5184075-p2709971
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'AMARRAC...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', '9CM', 'MODELO'}
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-fino-pink-5165304-p1680594
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DETALHE...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', '10', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', 'CM'}
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.560+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-grosso-amarracao-preto-5178857-p2655100
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - Desc set {'AMARR...', 'ACABAMENTO', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', '6CM', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', 'GROSSO'}
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-essenciais-salto-fino-pespontos-laranja-5180678-p2672668
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'TIPO', 'TIRA', 'ADULTO', 'SCARPIN', 'GABRIELA', 'DETALHE', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'P...', '9CM', 'MODELO'}
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-beira-rio-aberto-salto-fino-elastico-off-white-5181254-p2677740
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.561+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'GEOMETRICO', 'DE', 'ABERTO', 'TIPO', 'E...', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', '9,5', 'CM'}
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-taca-tiras-no-strass-nude-5190634-p2767613
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'PRETO', 'ALTURA', 'MATERIAL', 'TACA', '9,5CM', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', 'RETO'}
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-amarracao-fivela-preto-5172584-p2602177
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'DECOTE...', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'BLOCO', 'SALTO', 'DIA', '9CM', 'MODELO'}
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.562+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-taca-amarracao-pink-5171554-p2593062
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MOLECA', 'DE', 'TIPO', 'ANABELA', 'MATELA...', 'ADULTO', 'SCARPIN', 'DETALHE', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', '9CM', 'LACO', 'MODELO'}
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-detalhe-laco-strass-verde-5175324-p2621337
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'AMARRAC...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', '9CM', 'MODELO'}
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.563+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-fino-tiras-cruzadas-nude-5182983-p2694831
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', '8CM', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'PESPONTOS', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'OF...', 'MODELO', 'GROSSO'}
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-grosso-amarracao-strass-preto-5182960-p2694561
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'DETALHE', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'PESPON...', 'NAPA', 'DO', 'SALTO', 'DIA', '5CM', 'MODELO', 'GROSSO'}
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-fino-detalhe-pespontos-verde-5172803-p2603726
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - Desc set {'PESPONTO...', 'ACABAMENTO', 'DE', 'ABERTO', 'TIPO', 'MEIA', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', '9CM', 'MODELO', 'PATA'}
+[2023-11-09T19:46:01.564+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-taca-detalhe-tira-preto-5183357-p2701045
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DETALHE...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', '7CM', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-penelope-aberto-salto-geometrico-pespontos-preto-5177038-p2631552
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'GEOMETRICO', 'DE', 'TIPO', 'ADULTO', 'SCARPIN', 'DETALHE', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', '7', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'RIO', 'DO', 'BLOCO', 'TIRA...', 'SALTO', 'DIA', 'MODELO', 'BEIRA', 'CM'}
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.565+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-geometrico-elastico-coral-5180168-p2669225
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'GEOMETRICO', 'DE', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'DETALHE', 'OCASIAO', 'USO', 'TECIDO', '7CM', 'NO', 'ALTURA', 'MATERIAL', 'STR...', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-fino-detalhe-fivela-off-white-5175877-p2624183
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'AMARRAC...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', '9CM', 'MODELO'}
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-salto-reto-pespontos-preto-5178826-p2655097
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.566+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'ABERTO', 'TIPO', 'TIRA', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', '10CM', 'ALTURA', 'MATERIAL', 'ROXO', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', 'RETO'}
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-beira-rio-aberto-aberto-salto-fino-elastico-preto-5184920-p2715518
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'GEOMETRICO', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'TECIDO', 'F...', 'ALTURA', 'MATERIAL', '9,5CM', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-bloco-decote-fivela-preto-5188392-p2746424
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DETALHE...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', '6CM', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'QUADRADO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'BLOCO', 'SALTO', 'DIA', 'MODELO', 'RETO'}
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.567+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-moleca-flow-anabela-pespontos-caramelo-5185018-p2717556
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'AMARRAC...', 'DE', 'ABERTO', 'TIPO', 'ANABELA', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'REDONDO', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'A', 'GENERO', '3CM', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO'}
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-moleca-anabela-detalhe-laco-matelasse-preto-5190489-p2765860
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DE', 'TIPO', 'ANABELA', 'ADULTO', 'SCARPIN', 'GABRIELA', '...', 'OCASIAO', 'USO', 'RECORTE', 'ALTURA', 'MATERIAL', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', '2.5CM', 'DO', 'SALTO', 'DIA', 'VINIL', 'MODELO'}
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-vizzano-aberto-salto-fino-amarracao-preto-5177528-p2636090
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.568+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DETALHE...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'GABRIELA', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', '6', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', 'MODELO', 'CM'}
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-taca-amarracao-verde-5171838-p2595420
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'TRATORADO...', 'DE', '8CM', 'TIPO', 'ANABELA', 'ADULTO', 'SCARPIN', 'OCASIAO', 'USO', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'RIO', 'DO', 'BONECA', 'SALTO', 'DIA', 'MODELO', 'BEIRA'}
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - URL https://www.stz.com.br/scarpin-gabriela-aberto-salto-taca-amarracao-verde-5171573-p2593065
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - Query set {'SCARPIN', 'NAPA', 'ADULTO', 'FEMININO'}
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DETALHE...', 'DE', 'ABERTO', 'TIPO', 'ADULTO', 'SCARPIN', 'OCASIAO', 'USO', 'PENELOPE', 'ALTURA', 'MATERIAL', 'TACA', 'FEMININO', 'SINTETICO', 'BICO', 'FINO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DO', 'SALTO', 'DIA', '9CM', 'MODELO'}
+[2023-11-09T19:46:01.569+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-duramo-sl-esportivo-masculino-marinho-5164550-p1670091
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ADIDAS', 'DURAMO', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'SL', 'TECIDO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-lite-racer-3-0-esportivo-masculino-preto-5173611-p2612495
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - Desc set {'ADIDAS', 'MASCULINO', 'DE', 'ESPORTIVO', 'ADULTO', 'ESPORTIV...', 'OCASIAO', 'USO', 'MATERIAL', 'LITE', 'ADAPT', 'SINTETICO', 'A', 'GENERO', '4.0', 'SETOR', 'CORRIDA', 'DIA', 'MODELO', 'TENIS', 'RACER'}
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.570+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-lite-racer-adapt-4-0-esportivo-masculino-preto-5178774-p2654025
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'ADIDAS', 'MASCULINO', 'DE', 'ESPORTIVO', 'RAID3R', 'MESH', 'ADULTO', '...', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'STREET', 'CORRIDA', 'VULC', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-lite-racer-3-0-esportivo-masculino-preto-5172113-p2598360
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'ADIDAS', 'MASCULINO', 'ESPORTIVO', 'DE', 'MESH', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SHOW', 'SINTETICO', 'THE', 'WAY', 'GENERO', 'SETOR', 'CORRIDA', '2.0', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-vulc-raid3r-street-masculino-tecido-preto-5189810-p2759572
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - Desc set {'ADIDAS', 'MASCULINO', 'ESPORTIVO', 'RUN', 'DE', 'U', 'LATIN', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.571+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-vs-pace-2-0-street-masculino-preto-5188242-p2744911
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'ADIDAS', 'MASCULINO', 'ESPORTIVO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', '3.0', 'LITE', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'CASUAL', 'SKATE', 'MODELO', 'TENIS', 'RACER'}
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-show-the-way-2-0-esportivo-masculino-preto-5172121-p2598414
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ADIDAS', 'MASCULINO', 'ADULTO', 'SINTETICO', 'CASUAL', 'ACADEMIA', 'MODELO', 'OCASIAO', 'DE', 'TENIS', 'GENERO', 'TECIDO', 'USO', 'ADVANTAGE', 'ESPORTIVO', 'BASE', 'SETOR'}
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.572+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-showtheway-2-0-esportivo-masculino-marinho-5181610-p2679934
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'GALAXY', '6', 'ADIDAS', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', '...', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR'}
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-latin-run-u-esportivo-masculino-grafite-5189706-p2759134
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - Desc set {'GRANDCOURT', 'ADIDAS', 'MASCULINO', 'DE', 'ESPORTIVO', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'CLOUDFOAM', 'CASUAL', 'M...', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-grand-court-base-2-0-simp-casual-masculino-branco-5188230-p2744811
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.573+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'ADIDAS', 'MASCULINO', 'DE', 'ADULTO', '...', 'OCASIAO', 'USO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'CASUAL', 'MODELO', 'TENIS', 'STREETCHECK'}
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-lite-racer-3-0-esportivo-masculino-marinho-5183001-p2695392
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - Desc set {'GRANDCOURT', 'ADIDAS', 'MASCULINO', 'ACADEMIA', 'DE', 'ESPORTIVO', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'CLOUDFOAM', 'LI...', 'MODELO', 'TENIS', 'ALPHA'}
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-advantage-base-street-masculino-preto-5182534-p2690323
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'ADIDAS', 'MASCULINO', 'DE', 'ADULTO', '...', 'OCASIAO', 'USO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'CASUAL', 'MODELO', 'TENIS', 'STREETCHECK'}
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.574+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-advantage-base-casual-masculino-branco-5188206-p2744905
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'ADIDAS', 'MASCULINO', 'ESPORTIVO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'RUNFALCON', 'MATERIAL', '3.0', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-galaxy-5-esportivo-masculino-preto-5173623-p2612636
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '3.0', 'CORRIDA', 'ADIDAS', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'RUNFALCON', 'SETOR'}
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-adidas-galaxy-6-esportivo-masculino-preto-5182896-p2695258
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - Query set {'ADIDAS', 'ADULTO', 'MASCULINO', 'TENIS'}
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ULTRABOUNCE', 'ADIDAS', 'DIA', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'A', 'SETOR'}
+[2023-11-09T19:46:01.575+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-asics-esportivo-streetwise-masculino-cinza-5184152-p2709279
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'ASICS', 'TENIS'}
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'STREETWISE', 'MESH', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'CORRIDA', 'ASICS', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-asics-versablast-2-se-esportivo-masculino-preto-5183216-p2698931
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'ASICS', 'TENIS'}
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - Desc set {'3', 'MASCULINO', 'ACADEMIA', 'ESPORTIVO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'G...', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'RAIDEN', 'ASICS', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.576+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-asics-raiden-3-esportivo-masculino-grafite-5179292-p2660423
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'ASICS', 'TENIS'}
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ASICS', '5', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'GEL-SHOGUN', 'DE', 'USO', 'SETOR'}
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-asics-fuzeblast-se-esportivo-preto-5183250-p2699317
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'ASICS', 'TENIS'}
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - Desc set {'SE', 'ACABAMENTO', 'MASCULINO', 'METALIZADO', 'ESPORTIVO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'FEMININO', 'SINTETICO', '2', 'GENERO', 'SETOR', 'CORRIDA', 'ASICS', 'MODELO', 'TENIS', 'VERSABLAST'}
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-asics-gel-shogun-5-esportivo-masculino-grafite-5189389-p2756650
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'ASICS', 'TENIS'}
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ASICS', '5', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'GEL-SHOGUN', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.577+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-asics-fuzeblast-se-esportivo-masculino-mesh-preto-5189857-p2760027
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'ASICS', 'TENIS'}
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'MESH', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', '5', 'SINTETICO', 'GENERO', 'GEL-SHOGUN', 'SETOR', 'CORRIDA', 'ASICS', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-asics-versablast-2-se-esportivo-masculino-neon-azul-5193178-p2786727
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'ASICS', 'TENIS'}
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ASICS', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'ESTAMPA', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'GEL-SPECTRUM', 'TECIDO', 'DE', 'USO', 'SETOR', 'CAMUFLADO', 'CORRIDA'}
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.578+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-jet-6-esportivo-masculino-marinho-5186309-p2730536
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'JET', 'MESH', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'MIZUNO', 'MAR...', '6', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-space-2-esportivo-masculino-preto-5177259-p2633904
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'MES...', 'ACADEMIA', 'ESPORTIVO', 'DE', 'JET', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', '5', 'MIZUNO', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-jet-5-esportivo-masculino-mesh-azul-5177268-p2633906
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.579+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'MESH', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'RIDE', 'MIZUNO', 'COOL', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-space-2-esportivo-masculino-cinza-5171600-p2593480
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'JET', 'MIZUNO', 'VER...', '6', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR'}
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-cool-ride-esportivo-masculino-marinho-5177283-p2633974
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'JET', 'MIZUNO', '6', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'PRETO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.580+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-wave-falcon-4-esportivo-masculino-azul-5178142-p2645733
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'MESH', 'WAVE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'MIZUNO', 'SINTETICO', '2', 'A', 'WAY', 'GENERO', 'SETOR', 'CORRIDA', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-jet-6-esportivo-masculino-vermelho-5186308-p2730535
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', '3', 'MASCULINO', 'ESPORTIVO', 'DE', 'MESH', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'MIZUNO', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'SPACE', 'P...', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-falcon-3-esportivo-masculino-preto-5171592-p2593252
+[2023-11-09T19:46:01.581+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MIZUNO', 'WAVE', 'MASCULINO', 'ADULTO', 'FALCON', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', '4', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-jet-6-esportivo-masculino-preto-5193362-p2787642
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'MASCUL...', 'ESPORTIVO', 'DE', 'MESH', 'WAVE', 'ADULTO', 'OCASIAO', 'USO', 'MIRAI', 'TECIDO', 'MATERIAL', 'MIZUNO', 'SINTETICO', 'GENERO', '4', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-wave-vitality-4-esportivo-masculino-preto-5178139-p2645570
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'MASCUL...', 'ESPORTIVO', 'DE', 'WAVE', 'ADULTO', 'OCASIAO', 'USO', 'MIRAI', 'TECIDO', 'MATERIAL', 'MIZUNO', 'SINTETICO', 'GENERO', '4', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.582+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-wave-way-2-esportivo-masculino-marinho-5171591-p2593251
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MIZUNO', 'MASCULINO', 'GOYA', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'PRETO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-cool-ride-esportivo-masculino-knit-grafite-5184477-p2712987
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'RIDE', 'MIZUNO', 'COOL', 'SINTETICO', 'KNIT', 'A', 'GENERO', 'SETOR', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-space-3-esportivo-masculino-preto-5186213-p2729339
+[2023-11-09T19:46:01.583+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MIZUNO', '3', 'MASCULINO', 'ADULTO', 'SPACE', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'G...', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-goya-esportivo-masculino-grafite-5192606-p2783252
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '5', 'MIZUNO', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'DYNASTY'}
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-wave-falcon-4-esportivo-masculino-preto-5178160-p2645574
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', '3', 'MASCULINO', 'ESPORTIVO', 'DE', 'MESH', 'WAVE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'MIZUNO', 'SINTETICO', 'WAY', 'GENERO', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.584+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-space-3-esportivo-masculino-marinho-5191581-p2778060
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MIZUNO', 'WAVE', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'CORRIDA', 'FUJIN'}
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-wave-mirai-4-esportivo-masculino-marinho-5171582-p2593246
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'MASCUL...', 'ESPORTIVO', 'DE', 'WAVE', 'ADULTO', 'OCASIAO', 'USO', 'MIRAI', 'TECIDO', 'MATERIAL', '5', 'MIZUNO', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-cool-ride-esportivo-masculino-knit-preto-5177281-p2633908
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.585+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ACADEMIA', 'ESPORTIVO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', '5', 'MIZUNO', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'DYNASTY', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-wave-mirai-4-esportivo-masculino-knit-grafite-5178150-p2645573
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'MASCUL...', 'ESPORTIVO', 'DE', 'WAVE', 'ADULTO', 'OCASIAO', 'USO', 'MIRAI', 'TECIDO', 'MATERIAL', '5', 'MIZUNO', 'SINTETICO', 'KNIT', 'GENERO', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-mizuno-wave-mirai-4-esportivo-masculino-knit-marinho-5178138-p2645569
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'MIZUNO', 'TENIS'}
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'WAVE', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'FUJIN', 'MATERIAL', 'MIZUNO', 'SINTETICO', 'KNIT', 'GENERO', 'SETOR', 'CORRIDA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.586+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-vermelho-5183411-p2701371
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '6', 'MASCULINO', 'NIKE', 'ADULTO', 'SINTETICO', 'REVOLUTION', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-downshifter-11-esportivo-masculino-preto-5163344-p1658777
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '12', 'CORRIDA', 'MASCULINO', 'NIKE', 'ADULTO', 'MASCUL...', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'DOWNSHIFTER', 'SETOR'}
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-downshifter-12-esportivo-masculino-marinho-5183392-p2701367
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.587+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ACADEMIA', 'ESPORTIVO', 'DE', 'MAS...', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', '6', 'SINTETICO', 'REVOLUTION', 'GENERO', 'SETOR', 'NEXT', 'NIKE', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-azul-5170466-p2579968
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '12', 'MASCULINO', 'NIKE', 'ADULTO', 'SINTETICO', 'MASCUL...', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'DOWNSHIFTER', 'SETOR'}
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-next-esportivo-masculino-preto-5186631-p2732755
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '6', 'MASCULINO', 'NIKE', 'ADULTO', 'SINTETICO', 'REVOLUTION', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR'}
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.588+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-next-nature-esportivo-masculino-branco-5186601-p2732805
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ACADEMIA', 'DE', 'ESPORTIVO', 'DEBUT', 'WAFFLE', 'ADULTO', '...', 'JOGGING', 'OCASIAO', 'TECIDO', 'USO', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'NIKE', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-downshifter-12-esportivo-masculino-branco-5189381-p2756470
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ESSENTIAL', 'MASCULINO', 'NIKE', 'ADULTO', 'SINTETICO', '2', 'MODELO', 'LEGEND', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'OCASIAO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-next-nature-esportivo-masculino-preto-5189383-p2756472
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.589+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ESSENTIAL', 'MASCULINO', 'NIKE', 'ADULTO', 'SINTETICO', '2', 'MODELO', 'LEGEND', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'OCASIAO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-azul-5183422-p2701486
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '6', 'MASCULINO', 'NIKE', 'ADULTO', 'SINTETICO', 'REVOLUTION', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-preto-5173422-p2610831
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '5', 'MASCULINO', 'NIKE', 'ADULTO', 'SINTETICO', 'QUEST', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'PRETO', 'DE', 'USO', 'SETOR', 'CORRIDA'}
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.590+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-waffle-debut-jogging-masculino-camurca-preto-5177884-p2641947
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORT...', 'DE', 'CAMURCA', 'ADULTO', 'NATURE', 'OCASIAO', 'TECIDO', 'USO', 'MATERIAL', '6', 'REVOLUTION', 'A', 'GENERO', 'SETOR', 'NEXT', 'DIA', 'NIKE', 'COURO', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-court-royale-2-masculino-branco-5170499-p2580427
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'DEFY', 'MASCULINO', 'ESPORTIVO', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'NIKE', 'CASUAL', 'SKATE', 'MODELO', 'TENIS', 'ALL', 'DAY'}
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-legend-essential-2-esportivo-masculino-preto-5173415-p2610260
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'NIKE', 'TR', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'REP', 'USO', 'SETOR', 'CITY'}
+[2023-11-09T19:46:01.591+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-legend-essential-2-esportivo-masculino-azul-5178103-p2645056
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - Desc set {'8', 'MATERIAL', 'MASCULINO', 'NIKE', 'ZOOM', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'WINFLO', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR'}
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-legend-essential-2-esportivo-masculino-preto-5177983-p2643211
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - Desc set {'58', 'SB', 'MASCULINO', 'DE', 'ESPORTIVO', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'FORCE', 'PREMIUM', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'STREET', 'CORRIDA', 'NIKE', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.592+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-downshifter-12-esportivo-masculino-preto-5183393-p2701478
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ACADEMIA', 'DE', 'ESPORTIVO', 'MAX', 'AIR', 'ADULTO', 'ES...', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'TRAINER', '5', 'SINTETICO', 'GENERO', 'SETOR', 'NIKE', 'MODELO', 'FLEX', 'TENIS', 'ALPHA'}
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-esportivo-masculino-preto-5183425-p2701635
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'VISION', 'DE', 'ESPORTIVO', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'NIKE', 'LOW', 'COURT', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-court-royale-2-casual-masculino-preto-5170542-p2580721
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'VISION', 'DE', 'ADULTO', 'OCASIAO', 'USO', 'LO', 'MATERIAL', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'NAPA', 'STREET', 'DIA', 'NIKE', 'COURT', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.593+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-quest-5-esportivo-masculino-preto-5189375-p2756465
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - Desc set {'AP', 'MASCULINO', 'DE', 'ESPORTIVO', 'MAX', 'AIR', 'ADULTO', 'JOGGING', 'OCASIAO', 'TECIDO', 'USO', 'PRETO', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'NIKE', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-nike-revolution-6-next-nature-esportivo-masculino-branco-5189582-p2757915
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'NIKE', 'TENIS'}
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - Desc set {'AP', 'MASCULINO', 'DE', 'ESPORTIVO', 'MAX', 'AIR', 'ADULTO', 'JOGGING', 'OCASIAO', 'TECIDO', 'USO', 'PRETO', 'MATERIAL', 'SINTETICO', 'GENERO', 'SETOR', 'CORRIDA', 'NIKE', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-index-2-esportivo-masculino-vermelho-5177894-p2641728
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.594+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ACADEMIA', 'ESPORTIVO', 'DE', 'OLYMPIKUS', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', '2', 'A', 'GENERO', 'INDEX', 'SETOR', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-wellness-esportivo-masculino-marinho-5151715-p601861
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '3', 'MASCULINO', 'ADULTO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'INDEX', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-index-3-esportivo-masculino-preto-5187851-p2740554
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'MARTE', 'ADULTO', 'SINTETICO', 'MODELO', '...', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.595+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-delta-esportivo-masculino-preto-5177878-p2641721
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ESPORTIVO', 'DE', 'OLYMPIKUS', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', '2', 'A', 'GENERO', 'INDEX', 'SETOR', 'CORRIDA', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-marte-esportivo-masculino-cinza-5187842-p2740552
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'URANO', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', '...', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-delta-esportivo-masculino-neon-azul-5177877-p2641477
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ESPORTIVO', 'DE', 'OLYMPIKUS', 'C...', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'MEGA', 'SINTETICO', 'A', 'GENERO', 'SETOR', 'CORRIDA', 'DIA', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.596+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-index-2-esportivo-masculino-marinho-5177891-p2641725
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'DIA', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'A', 'SETOR', 'OLYMPIKUS', 'WELLNESS'}
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-eros-casual-masculino-preto-5183475-p2702198
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'ESPORTIVO', 'DE', 'OLYMPIKUS', 'ADULTO', 'OCASIAO', 'USO', 'MATERIAL', 'SINTETICO', 'VIBRACAO', 'A', 'GENERO', 'SETOR', 'NAPA', 'DIA', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.597+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-urano-esportivo-masculino-branco-5183132-p2697260
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'SATURNO'}
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-mega-esportivo-masculino-azul-5177867-p2641468
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'MARTE', 'ADULTO', 'SINTETICO', 'MODELO', '...', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-mega-esportivo-masculino-cinza-5177879-p2641722
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.598+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', '946', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'LAP', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-vibracao-esportivo-masculino-preto-5183117-p2697026
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ULTRALEVE', 'MASCULINO', 'ADULTO', 'SINTETICO', 'M...', 'ACADEMIA', 'MODELO', '232G', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'OCASIAO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-wellness-esportivo-masculino-cinza-5104951-p50760
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ULTRALEVE', 'MASCULINO', 'ADULTO', 'SINTETICO', 'M...', 'MODELO', '232G', 'ESPORTIVO', 'TENIS', 'GENERO', 'OCASIAO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.599+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-proof-2-esportivo-masculino-preto-5163169-p1657759
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - Desc set {'BR...', 'MATERIAL', 'MASCULINO', 'ADULTO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'ZEX', 'CORRIDA'}
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-vibracao-esportivo-masculino-preto-5177889-p2641952
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ULTRALEVE', 'MASCULINO', 'ADULTO', 'SINTETICO', 'M...', 'ACADEMIA', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', '237G', 'DE', 'USO', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-reverb-esportivo-masculino-preto-5183152-p2697729
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.600+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', 'REVERB', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-saturno-esportivo-masculino-cinza-5183147-p2697459
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ACABAMENTO', 'MASCULINO', 'ADULTO', 'NAPA', 'SINTETICO', 'ACADEMIA', 'MODELO', 'REVERB', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-1237g-ultraleve-esportivo-masculino-preto-5187857-p2740715
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - Desc set {'ACABAMENTO', 'MASCULINO', 'MASCUL...', 'ESPORTIVO', 'DE', 'OLYMPIKUS', 'MESH', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'MATERIAL', 'SINTETICO', '2', 'A', 'GENERO', 'SETOR', 'CORRIDA', 'DIA', 'MODELO', 'TENIS', 'TRIUNFO'}
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.601+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-marte-esportivo-masculino-preto-5187852-p2740555
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'ULTRALEVE', 'MASCULINO', 'ADULTO', 'SINTETICO', 'M...', 'ACADEMIA', 'MODELO', '232G', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'OCASIAO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - URL https://www.stz.com.br/olympikus-delta-esportivo-masculino-neon-preto-5178956-p2656549
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '3', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'INDEX', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-lap-946-esportivo-masculino-grafite-5165544-p1682564
+[2023-11-09T19:46:01.602+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - Desc set {'MATERIAL', '3', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'INDEX', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-155g-ultraleve-esportivo-masculino-preto-5165536-p1682556
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'PROOF', '3', 'DIA', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'DE', 'USO', 'A', 'SETOR', 'OLYMPIKUS'}
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-232g-ultraleve-esportivo-masculino-preto-5177860-p2641228
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'ADULTO', 'SINTETICO', 'ACADEMIA', 'MODELO', '...', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'URBEX'}
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.603+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-rushy-esportivo-masculino-vermelho-5177836-p2641218
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'POSEIDON', 'MASCULINO', 'ADULTO', 'SINTETICO', 'CASUAL', 'MODELO', '...', 'OCASIAO', 'DE', 'TENIS', 'GENERO', 'TECIDO', 'USO', 'ESPORTIVO', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-232g-ultraleve-esportivo-masculino-azul-5177833-p2641215
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ACADEMIA', 'DE', 'ESPORTIVO', 'OLYMPIKUS', 'ADULTO', 'OCASIAO', 'USO', 'PRETO', 'ONLY', 'MATERIAL', 'SINTETICO', '2', 'A', 'GENERO', 'SETOR', 'DIA', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-urbex-esportivo-masculino-marinho-5172345-p2600522
+[2023-11-09T19:46:01.604+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'ADULTO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'PRETO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'ZEX', 'CORRIDA'}
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-zex-esportivo-masculino-branco-5183123-p2697032
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'ZEX', 'CORRIDA'}
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-estilo-esportivo-masculino-grafite-5177855-p2641223
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - Desc set {'MASCULINO', 'ACADEMIA', 'DE', 'ESPORTIVO', 'OLYMPIKUS', 'ADULTO', 'OCASIAO', 'USO', 'TECIDO', 'ONLY', 'MATERIAL', 'SINTETICO', '2', 'GENERO', 'SETOR', 'BR...', 'CASUAL', 'MODELO', 'TENIS'}
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.605+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-237g-ultraleve-esportivo-masculino-grafite-5188151-p2743751
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'PROOF', '3', 'MASCULINO', 'ADULTO', 'SINTETICO', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - URL https://www.stz.com.br/tenis-olympikus-cyan-esportivo-masculino-marinho-5192374-p2782110
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - Query set {'ADULTO', 'MASCULINO', 'OLYMPIKUS', 'TENIS'}
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - Desc set {'MATERIAL', 'SOMA', 'MASCULINO', 'ADULTO', 'SINTETICO', 'M...', 'MODELO', 'OCASIAO', 'ESPORTIVO', 'TENIS', 'GENERO', 'TECIDO', 'DE', 'USO', 'SETOR', 'OLYMPIKUS', 'CORRIDA'}
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - IS A VALID ITEM
+[2023-11-09T19:46:01.606+0000] {logger.py:18} INFO - ------------------------
+[2023-11-09T19:46:01.609+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-09T19:46:01.615+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=query_scraper, task_id=validate_item_descriptions, execution_date=20231109T185340, start_date=20231109T194601, end_date=20231109T194601
+[2023-11-09T19:46:01.637+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-09T19:46:01.654+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check
